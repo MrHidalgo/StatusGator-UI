@@ -1,0 +1,16 @@
+//- SVG SPRITE
+//- ========================
+
+    @param {String} iconName
+    @param {String} classMod
+
+    @example
+      +iconSVG(iconName, classMod)
+
+//- ========================
+mixin iconSVG(iconName, classMod)
+  -
+    var mod = classMod || '';
+
+  svg(class="icon-svg icon-" + iconName + ' ' + mod)
+    use(xlink:href="./img/sprite.svg#" + iconName)

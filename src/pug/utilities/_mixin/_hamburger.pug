@@ -1,0 +1,27 @@
+//- HAMBURGER
+//- ========================
+
+    @param {String} classMod - default 'squeeze', other mod see in style file.
+
+    @example
+      +hamburger()
+      +hamburgerCustom()
+
+//- ========================
+mixin hamburger(classMod)
+  .hamburger(
+    class!= "hamburger--" + ((classMod) ? classMod : "squeeze")
+    role="button"
+    hamburger-js
+  )
+    .hamburger-box
+      .hamburger-inner
+
+mixin hamburgerCustom(classMod)
+  .c-hamburger(
+    class!= "c-hamburger--custom"
+    role="button"
+    hamburger-js
+  )
+    .c-hamburger__box
+      .c-hamburger__inner

@@ -1,0 +1,69 @@
+// HAMBURGER :: START
+
+$whenShowHamburgerMenu: 'max-large';
+$hamburger-box-width: 30px;
+$hamburger-box-height: 17px;
+$hamburger-line-height: 3px;
+$hamburger-line-borderRadius: 2px;
+$hamburger-line-backgroundColor: #fff;
+
+.c-hamburger {
+  cursor: pointer;
+  display: none;
+  @include respond($whenShowHamburgerMenu) {
+    display: flex;
+  }
+
+  &.is-active {
+    .c-hamburger__inner {
+      &:after,
+      &:before {
+      }
+      &:before {
+      }
+      &:after {
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: $hamburger-box-width;
+    height: $hamburger-box-height;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $hamburger-line-height;
+    border-radius: $hamburger-line-borderRadius;
+    background-color: $hamburger-line-backgroundColor;
+    @include transition(background-color);
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $hamburger-line-height;
+      border-radius: $hamburger-line-borderRadius;
+      background-color: $hamburger-line-backgroundColor;
+      @include transition(transform, background-color);
+    }
+
+    &:before {
+      //bottom: -7px;
+      transform: translateX(0);
+    }
+
+    &:after {
+      //bottom: -14px;
+      transform: translateX(0);
+    }
+  }
+}
+
+// HAMBURGER :: END

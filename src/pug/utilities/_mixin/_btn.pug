@@ -1,0 +1,56 @@
+//- BTN
+//- ========================
+
+    @param {String} classMod
+    @param {String} hrefVal
+    @param {String} btnVal
+    @param {String} iconName
+
+    @example
+      +btn('header', '', 'Some btn name')
+      +btnIconSVG('header', '', 'Some btn name', 'icon-name')
+      +btnIconPNG('header', '', 'Some btn name', 'icon-name')
+      +btnIconFONT('header', '', 'Some btn name', 'icon-name')
+
+//- ========================
+mixin btn(classMod, hrefVal, btnVal)
+  a.c-btn(
+    href!= (hrefVal) ? hrefVal : '#'
+    title=""
+    class="c-btn--" + classMod
+  )
+    .c-btn__text-wrap
+      span.c-btn__text!= btnVal
+
+mixin btnIconSVG(classMod, hrefVal, btnVal, iconName)
+  a.c-btn(
+    href!= (hrefVal) ? hrefVal : '#'
+    title=""
+    class="c-btn--" + classMod
+  )
+    .c-btn__text-wrap
+      span.c-btn__text!= btnVal
+    .c-btn__icon-wrap
+      +iconSVG(iconName, 'c-title__icon')
+
+mixin btnIconPNG(classMod, hrefVal, btnVal, iconName)
+  a.c-btn(
+    href!= (hrefVal) ? hrefVal : '#'
+    title=""
+    class!= "c-btn--" + classMod
+  )
+    .c-btn__text-wrap
+      span.c-btn__text!= btnVal
+    .c-btn__icon-wrap
+      i.c-title__icon.icon-png(class!= iconName)
+
+mixin btnIconFONT(classMod, hrefVal, btnVal, iconName)
+  a.c-btn(
+    href!= (hrefVal) ? hrefVal : '#'
+    title=""
+    class="c-btn--" + classMod
+  )
+    .c-btn__text-wrap
+      span.c-btn__text!= btnVal
+    .c-btn__icon-wrap
+      i.c-title__icon.icon-font(class!= iconName)

@@ -1,0 +1,83 @@
+.modal {
+  position: relative;
+  width: 100%;
+  //max-width: 500px;
+  //min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+
+//
+// Zoom in...
+// ==========
+.mfp-zoom-in{
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.8);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+
+  &.mfp-removing {
+    .mfp-with-anim {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}
+
+
+//
+// Slide in {Change translate{X,Y} option for choose direction slide - top, left, bottom, right} - default slide in left.
+// ==========
+.mfp-slide-in{
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+
+  &.mfp-removing {
+    .mfp-with-anim {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,207 @@
+////
+/// @group  Function
+////
+
+
+///
+/// ### Photoshop unit letter-spacing convert to pixel.
+///
+/// @name letter-spacing-convert
+///
+/// @param {Number} $unit
+/// @param {Number} $fontSize
+///
+/// @return {Number}
+///
+/// @example
+///   FUNCTION => letter-spacing-convert():
+///     letter-spacing: letter-spacing-convert(22, 18);
+///   ====================================================
+///
+///
+///
+@function letter-spacing-convert($unit, $fontSize) {
+  @return (($unit * $fontSize) / 1000) * 1px;
+}
+
+
+
+
+///
+/// ### Photoshop unit line-height convert to unit num.
+///
+/// @name line-height-convert
+///
+/// @param {Number} $unit
+/// @param {Number} $fontSize
+///
+/// @return {Number}
+///
+/// @example
+///   FUNCTION => line-height-convert():
+///     line-height: line-height-convert(22, 18);
+///   ====================================================
+///
+///
+///
+@function line-height-convert($unit, $fontSize) {
+  @return ($unit / $fontSize);
+}
+
+
+///
+/// ###
+///
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+
+///
+/// ### Function returns a Boolean value, depending on the point of variable objects. It uses an additional function :
+/// - **map-has-key()** - returns whether a map has a value associated with a given key;
+/// - **map-get()**     - returns the value in a map associated with the given key. If the map doesn’t have such a key, returns null;
+///
+/// @link http://sass-lang.com/documentation/Sass/Script/Functions.html#map_has_key-instance_method   map-has-key()
+/// @link http://sass-lang.com/documentation/Sass/Script/Functions.html#map_get-instance_method       map-get()
+///
+/// @name     search-key
+///
+/// @param    {Object}          $map      [$object]                   - The argument takes an object
+/// @arg      {String | Number} $keys...  [string, int, char... etc]  - Can take any number of arguments
+/// @return   {Boolean}                                               - return true if value find in variable $object, false/error if failed
+///
+/// @require  $object
+/// @see      return-value
+///
+/// @example
+///   FUNCTION => search-key():
+///     @if (search-key($object, $name, $key)) {
+///       @content
+///     }
+///   ====================================================
+///
+///   FUNCTION => map-has-key():
+///     map-has-key(("foo": 1, "bar": 2), "foo") => true
+///     map-has-key(("foo": 1, "bar": 2), "baz") => false
+///
+///   ====================================================
+///   FUNCTION => map-get():
+///     map-get(("foo": 1, "bar": 2), "foo") => 1
+///     map-get(("foo": 1, "bar": 2), "baz") => null
+///
+@function search-key($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+        @error "The value is not present in the object... watch [_varaible.scss]";
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}
+
+
+///
+/// ### Function get the value of the object. It uses an additional function :
+/// - **map-get()**     - returns the value in a map associated with the given key. If the map doesn’t have such a key, returns null;
+///
+/// @link http://sass-lang.com/documentation/Sass/Script/Functions.html#map_get-instance_method       map-get()
+///
+/// @name     get-value
+///
+/// @param    {Object}          $map      [$object]                   - The argument takes an object
+/// @arg      {String | Number} $keys...  [string, int, char... etc]  - Can take any number of arguments
+/// @return   {String | Number}                                       - Gets a key object
+///
+/// @require  $object
+/// @see      return-value
+///
+/// @example
+///   FUNCTION => get-value():
+///     @return get-value($object, $name, $key);
+///
+///   ====================================================
+///   FUNCTION => map-get():
+///     map-get(("foo": 1, "bar": 2), "foo") => 1
+///     map-get(("foo": 1, "bar": 2), "baz") => null
+///
+@function get-value($map, $keys...) {
+  @if ($keys == 0) {
+    @error "'#{$keys}' is empty, check your arguments";
+  } @else {
+    @each $key in $keys {
+      $map : map-get($map, $key);
+    }
+  }
+
+  @return $map;
+}
+
+
+
+///
+/// ### Function transform px to em. It uses an additional function :
+/// - **unitless()** - returns whether a number has units.
+///
+/// @link http://sass-lang.com/documentation/Sass/Script/Functions.html#unitless-instance_method  unitless()
+///
+/// @name     calculateEm
+///
+/// @param    {Number} $pixels  [Streing | Number]  - Value
+/// @param    {Number} $context [$browser-context]  - Value
+/// @return   {Number}                              - Transform 16px||16 to 1em
+///
+/// @see      $object
+///
+/// @example
+///   FUNCTION => calculateEm():
+///     width : calculateEm(16px | 16);  => width : 1em;
+///
+///   ====================================================
+///   FUNCTION => unitless():
+///     unitless(100)   => true
+///     unitless(100px) => false
+///
+@function calculateEm($pixels, $context: 16px) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+///
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+///
+/// ### Function get the value of the object.
+///
+/// @name     return-value
+///
+/// @param    {String}          $name  - Object Name
+/// @param    {String}          $key   - Object Key
+/// @return   {String | Number}        - if function find key in object, null & error if failed
+///
+/// @see      $object
+/// @see      search-key
+/// @see      get-value
+///
+/// @example
+///     $black : return-value(color, black);
+///
+@function return-value($name, $key) {
+  @if search-key($object, $name, $key) {
+    @return get-value($object, $name, $key);
+  }
+
+    @error "Function return-value() in $object : '#{$key}' not found!";
+  @return null;
+}

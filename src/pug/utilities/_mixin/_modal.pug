@@ -1,0 +1,18 @@
+//- MODAL
+//- ========================
+
+    @param {String} idMod
+    @param {Object (DOM)} modalContent - additional required wrapper create mixin
+
+    @example
+      mixin modalContent()
+        .modal__header
+        .modal__body
+        .modal__footer
+
+      +modal('modalIdName', 'modalContent')
+
+//- ========================
+mixin modal(idMod, contentModal)
+  .modal.mfp-hide.mfp-with-anim(id!= idMod)
+    +#{contentModal}

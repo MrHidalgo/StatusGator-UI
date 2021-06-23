@@ -1,0 +1,63 @@
+//- LOGOTYPE
+//- ========================
+
+    @param {String} classMod
+    @param {String} hrefVal - default homepage '/'
+    @param {String} imgName
+    @param {String} imgExt
+    @param {String} svgName
+    @param {String} txtVal
+
+    @example
+      +logotype('header', '', 'imgName', 'png')
+      +logotypeSVG('header', '', 'svgIconName')
+      +logotypeImgText('header', '', 'imgName', 'png', 'logoSomeText')
+      +logotypeText('header', '', 'logoSomeText')
+
+//- ========================
+mixin logotype(classMod, hrefVal, imgName, imgExt)
+  -
+    var imgSrcSet = "./img/" + imgName + "." + imgExt + ", ./img/" + imgName + "@2x." + imgExt;
+
+  .logo(class!= "logo--" + classMod)
+    a(
+      href!= (hrefVal) ? hrefVal : "/"
+      title="" class="logo__link"
+    )
+      img.logo__img(
+        srcset!= imgSrcSet
+        alt="" title=""
+       )
+
+mixin logotypeSVG(classMod, hrefVal, svgName)
+  .logo(class!= "logo--" + classMod)
+    a(
+      href!= (hrefVal) ? hrefVal : "/"
+      title="" class="logo__link"
+    )
+      +iconSVG(svgName)
+
+mixin logotypeImgText(classMod, hrefVal, imgName, imgExt, txtVal)
+  -
+    var imgSrcSet = "./img/" + imgName + "." + imgExt + ", ./img/" + imgName + "@2x." + imgExt;
+
+  .logo(class!= "logo--" + classMod)
+    a(
+      href!= (hrefVal) ? hrefVal : "/"
+      title="" class="logo__link"
+    )
+      .logo__img-wrap
+        img.logo__img(
+          srcset!= imgSrcSet
+          alt="" title=""
+        )
+      p.logo__text!= txtVal
+
+mixin logotypeText(classMod, hrefVal, txtVal)
+  .logo(class!= "logo--" + classMod)
+    a(
+      href!= (hrefVal) ? hrefVal : "/"
+      title="" class="logo__link"
+    )
+      p.logo__text!= txtVal
+

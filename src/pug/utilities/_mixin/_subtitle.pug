@@ -1,0 +1,14 @@
+//- SUBTITLE
+//- ========================
+
+    @param {String} classMod
+    @param {String} subtitleVal
+
+    @example
+      +subtitle('header', 'Some title name')
+
+//- ========================
+mixin subtitle(classMod, subtitleVal)
+  .c-subtitle(class!= "c-subtitle--" + classMod)
+    .c-subtitle__text-wrap
+      p.c-subtitle__text!= subtitleVal

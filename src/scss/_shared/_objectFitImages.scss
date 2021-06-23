@@ -1,0 +1,18 @@
+// OBJECT-FIT :: START
+
+.object-fit {
+  width: 100%;
+  height: 100%;
+
+  &--coverCenter {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &--containCenter {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+// OBJECT-FIT :: END

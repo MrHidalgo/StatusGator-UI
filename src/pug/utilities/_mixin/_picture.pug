@@ -1,0 +1,31 @@
+//- PICTURE
+//- ========================
+
+    @param {Boolean} ieSupport
+    @param {String} classModPicture
+    @param {String} classModImage
+    @param {String} imgType
+    @param {String} imgName
+
+    @example:
+      +pictureTag(false, "", "", "jpg", "imgName")
+
+//- ========================
+mixin pictureTag(ieSupport, classModPicture, classModImage, imgType, imgName)
+  -
+    var imgStringPathWebp = './img/' + imgName + '.webp, ./img/' + imgName + '@2x.webp 2x',
+      imgStringPath = './img/' + imgName + '.' + imgType + ', ./img/' + imgName + '@2x.' + imgType + ' 2x';
+
+  picture(class!= classModPicture)
+    if(ieSupport)
+      <!--[if IE 9]>
+      video(style="display: none;")
+      <![endif]-->
+      source(srcset= imgStringPath)
+      <!--[if IE 9]>
+      <![endif]-->
+    else
+      source(srcset!= imgStringPathWebp type="image/webp")
+      source(srcset!= imgStringPath type!= "image/" + imgType)
+
+    img(class!="object-fit " + ((classModImage) ? classModImage: "object-fit--coverCenter"), srcset!= imgStringPath)

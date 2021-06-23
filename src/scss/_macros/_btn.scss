@@ -1,0 +1,58 @@
+// BUTTON :: START
+
+// ==================================================
+// ==================================================
+// ==================================================
+
+$bth-width: 250px;
+$bth-height: 45px;
+$btn-border-width: 1px;
+$btn-border-color: rgba(#000, 1);
+$bth-border-radius: 5px;
+$bth-box-shadow: none;
+$bth-background-color: rgba(#000, 1);
+$bth-color: rgba(#fff, 1);
+$bth-font-size: rgba(#000, 1);
+$bth-font-weight: bold;
+
+$btn-color--border: rgba(#000, 1);
+
+// ==================================================
+// ==================================================
+// ==================================================
+
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: $bth-width;
+  height: $bth-height;
+  border: $btn-border-width solid $btn-border-color;
+  box-shadow: $bth-box-shadow;
+  border-radius: $bth-border-radius;
+  color: $bth-color;
+  font-size: $bth-font-size;
+  font-weight: $bth-font-weight;
+
+  &--border {
+    background-color: transparent;
+    color: $btn-color--border;
+  }
+
+  &--bg {
+    background-color: $bth-background-color;
+  }
+
+  &__text {
+    &-wrap {}
+  }
+
+  &__icon {
+    &-wrap {}
+  }
+}
+
+// BUTTON :: END

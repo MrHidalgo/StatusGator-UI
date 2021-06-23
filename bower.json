@@ -1,0 +1,35 @@
+{
+  "name": "smalltmp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrii Kovalenko <hkovalenko9@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MrHidalgo/SmallTMP",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/css/bootstrap.css",
+        "./dist/js/bootstrap.js"
+      ]
+    },
+    "Font-Awesome": {
+      "main": [
+        "./web-fonts-with-css/css/fontawesome-all.css",
+        "./web-fonts-with-css/webfonts/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "normalize-css": "^8.0.0",
+    "reset-css": "^4.0.1"
+  }
+}

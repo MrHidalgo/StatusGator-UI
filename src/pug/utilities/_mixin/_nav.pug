@@ -1,0 +1,35 @@
+//- MODAL
+//- ========================
+
+    @param {String} classMod
+    @param {Object Array} arrData - value: [href, name, icon]
+
+    @example
+      +nav('header', arr)
+      +navIcon('header', arr)
+
+//- ========================
+mixin nav(classMod, arrData)
+  nav.nav(class!= "nav--" + classMod)
+    ul.nav__list
+      each val, idx in arrData
+        li.nav__item(class!= "nav__item-" + idx)
+          a.nav__link(
+            href!= arrData[idx].href
+            title=""
+            class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
+          )!= arrData[idx].name
+
+mixin navIcon(classMod, arrData)
+  nav.nav(class!= "nav--" + classMod)
+    ul.nav__list
+      each val, idx in arrData
+        li.nav__item(class!= "nav__item-" + idx + " nav__item-" + arrData[idx].icon)
+          a.nav__link(
+            href!= arrData[idx].href
+            title=""
+            class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
+          )
+            .nav__link-icon
+              i.icon-font(class!= "icon-" + arrData[idx].icon)
+            span.nav__link-text!= arrData[idx].name

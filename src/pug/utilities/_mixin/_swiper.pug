@@ -1,0 +1,33 @@
+//- SWIPER
+//- ========================
+
+    @param {String} classMod - slider main container class modification
+    @param {Object (DOM)} contentSlide - additional required wrapper create mixin
+    @param {Boolean} paginationBool - if we need pagination
+    @param {Boolean} btnBool - if we need navigation buttons
+    @param {Boolean} scrollbarBool - if we need scrollbar
+
+    @example
+      mixin swiperContent()
+        .swiper-slide!= "0"
+        .swiper-slide!= "1"
+        .swiper-slide!= "2"
+
+      +swiper('someClassName', 'swiperContent', false, false, false)
+
+//- ========================
+mixin swiper(classMod, contentSlide, paginationBool, btnBool, scrollbarBool)
+  .swiper-container(class!= classMod)
+
+    .swiper-wrapper
+      +#{contentSlide}
+
+    if(paginationBool)
+      .swiper-pagination
+
+    if(btnBool)
+      .swiper-button-prev
+      .swiper-button-next
+
+    if(scrollbarBool)
+      .swiper-scrollbar

@@ -1,0 +1,65 @@
+///
+/// Mixin generate @font-face
+/// ===============
+@mixin mixinFontFace($fontName, $fontNameExt, $fontPath, $fontWeight, $fontExtension: eot woff2 woff ttf svg) {
+	$src: null;
+	$srcEot: null;
+
+	$extensionModObj: (
+		eot: "?iefix",
+		svg: "#" + $fontName
+	);
+
+	$formats: (
+		eot: "embedded-opentype",
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $fontExtension {
+
+
+		$extensionModsValue:
+			if(map-has-key($extensionModObj, $ext), $ext + map-get($extensionModObj, $ext), $ext);
+
+		$format:
+			if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+
+
+		@if($ext == "eot") {
+			$srcEot:
+				append($srcEot, url(quote($fontPath + $fontName + $fontNameExt + "." + $ext)));
+			$src:
+				append($src,
+					url(quote($fontPath + $fontName + $fontNameExt + "." + $extensionModsValue)) format(quote($format)), comma
+				);
+		} @else {
+			$src:
+				append($src,
+					url(quote($fontPath + $fontName + $fontNameExt + "." + $extensionModsValue)) format(quote($format)), comma
+				);
+		}
+	}
+
+	@font-face {
+		font-family: quote($fontName);
+
+		src: $srcEot;
+		src: $src;
+
+		font-style: normal;
+		font-weight: $fontWeight;
+	}
+}
+
+
+/// ===============
+/// CALL MIXIN FOR BUILD @FONT-FACE
+///
+/// Example:
+///
+/// @include mixinFontFace("JournalRegular", "-Bold", "../fonts/", normal, otf eot woff2 woff ttf svg);
+/// @include mixinFontFace("SF-Pro-Text", "-Bold", "../fonts/", bold, otf);
+/// @include mixinFontFace("SF-Pro-Text", "-Heavy", "../fonts/", 800, otf);
+///
+/// ===============

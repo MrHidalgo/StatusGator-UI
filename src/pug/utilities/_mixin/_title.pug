@@ -1,0 +1,78 @@
+//- TITLE
+//- ========================
+
+    @param {String} classMod
+    @param {String} titleVal
+    @param {String} iconName
+    @param {Object (DOM)} contentSubtitle - additional required wrapper create mixin
+
+    @example
+      +title('header', 'Some title name')
+      +titleIconSVG('header', 'Some title name', 'icon-name')
+      +titleIconPNG('header', 'Some title name', 'icon-name')
+      +titleIconFONT('header', 'Some title name', 'icon-name')
+      +titleWithSubtitle('header', 'Some title name', 'icon-name', 'subtitleContent')
+      +titleIconSVGWithSubtitle('header', 'Some title name', 'icon-name', 'subtitleContent')
+      +titleIconPNGWithSubtitle('header', 'Some title name', 'icon-name', 'subtitleContent')
+      +titleIconFONTWithSubtitle('header', 'Some title name', 'icon-name', 'subtitleContent')
+
+//- ========================
+mixin title(classMod, titleVal)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+
+mixin titleIconSVG(classMod, titleVal, iconName)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      +iconSVG(iconName, 'c-title__icon')
+
+mixin titleIconPNG(classMod, titleVal, iconName)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      i.c-title__icon.icon-png(class!= iconName)
+
+mixin titleIconFONT(classMod, titleVal, iconName)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      i.c-title__icon.icon-font(class!= iconName)
+
+mixin titleWithSubtitle(classMod, titleVal, contentSubtitle)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+
+    +#{contentSubtitle}
+
+mixin titleIconSVGWithSubtitle(classMod, titleVal, iconName, contentSubtitle)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      +iconSVG(iconName, 'c-title__icon')
+
+    +#{contentSubtitle}
+
+mixin titleIconPNGWithSubtitle(classMod, titleVal, iconName, contentSubtitle)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      +iconSVG(iconName, 'c-title__icon')
+
+    +#{contentSubtitle}
+
+mixin titleIconFONTWithSubtitle(classMod, titleVal, iconName, contentSubtitle)
+  .c-title(class!= "c-title--" + classMod)
+    .c-title__text-wrap
+      h1.c-title__text!= titleVal
+    .c-title__icon-wrap
+      +iconSVG(iconName, 'c-title__icon')
+
+    +#{contentSubtitle}
