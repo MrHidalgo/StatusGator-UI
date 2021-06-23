@@ -1,0 +1,52 @@
+// SECTION :: START
+
+.sidebar {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 100%;
+	padding: 30px 0;
+	background-color: #163A5F;
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+
+		ol {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			li {
+				display: flex;
+				width: 100%;
+			}
+
+			a {
+				position: relative;
+				display: flex;
+				width: 100%;
+				padding: 0 20px;
+				background-color: transparent;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 50px;
+				color: #fff;
+				@include transition(background-color, color);
+
+				&:hover,
+				&.is-active {
+					background-color: #ffffff;
+					color: #163A5F;
+					@include transition(background-color, color);
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END

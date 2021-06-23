@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- TITLE-->
-    <title>StatusGator</title>
+    <title>StatusGator UI</title>
     <!-- FAVICON-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,32 @@
   <body>
     <!-- HEADER :: START-->
     <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper"></div>
+      <div class="header__wrapper">
+        <p class="header__title">Colours</p>
       </div>
     </header>
     <!-- HEADER :: END-->
-    <div class="body body--start p-home"></div>
+    <div class="body body--start p-home">
+      <!-- SECTION :: START-->
+      <section class="sidebar" id="sidebar">
+        <div class="sidebar__wrapper">
+          <ol>
+            <li><a class="is-active" href="#">Colours</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#">Layout & Grid</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Buttons</a></li>
+            <li><a href="#">Placeholders</a></li>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Containers</a></li>
+          </ol>
+        </div>
+      </section>
+      <!-- SECTION :: END-->
+    </div>
   </body>
   <!-- SCRIPT :: START-->
-  <script src="js/vendor.js"></script>
+  <!--script(src="js/vendor.js")-->
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->
 </html>
