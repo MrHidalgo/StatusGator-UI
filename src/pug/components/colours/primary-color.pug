@@ -1,0 +1,49 @@
+// SECTION :: START
+
+p.ui__title Primary colours
+p.ui__desc Customizing the default color palette for your project.
+
+.ui__content
+  .ui__color-wrapper
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #21BF73;')
+        .ui__color-body
+          p Gator green
+          span #21BF73
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #1B2124;')
+        .ui__color-body
+          p Gator grey
+          span #1B2124
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #163A5F;')
+        .ui__color-body
+          p Gator dark blue
+          span #163A5F
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.primary-green-bg', '.st.primary-green-color', '.st.primary-green-border'], 'Add one of these classes to apply a background-color, border-color or color')
+        +tableRow(['.st.primary-grey-bg', '.st.primary-grey-color', '.st.primary-grey-border'], 'Add one of these classes to apply a background-color, border-color or color')
+        +tableRow(['.st.primary-dark-blue-bg', '.st.primary-dark-blue-color', '.st.primary-dark-blue-border'], 'Add one of these classes to apply a background-color, border-color or color')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st primary-green-bg'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st primary-green-color'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st primary-green-border'></div>`)
+    +codePreview('code-css', 'CSS', `.st.primary-green-bg {\n  background-color: #21BF73;\n}`)
+    +codePreview('code-css', 'CSS', `.st.primary-green-color {\n  color: #21BF73;\n}`)
+    +codePreview('code-css', 'CSS', `.st.primary-green-border {\n  border-color: #21BF73;\n}`)
+
+
+// SECTION :: END

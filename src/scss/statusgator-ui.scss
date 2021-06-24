@@ -1,0 +1,199 @@
+/// UTILITIES
+@import "_utilities/function";
+@import "_utilities/mixin";
+@import "_utilities/extend";
+@import "_utilities/variable";
+@import "_shared/main-setting-reset";
+
+
+/* COLOR VARIABLE PALETTE */
+$primary-green: #21BF73;
+$primary-grey: #1B2124;
+$primary-dark-blue: #163A5F;
+
+$shade-greys-1: #F3F5F7;
+$shade-greys-2: #EFF0F1;
+$shade-greys-3: #DDE0E3;
+$shade-greys-4: #CDD1D5;
+
+$tone-light-green: #99F3BD;
+$tone-red: #FD5E53;
+$tone-orange: #F5BE4F;
+$tone-sea-wave: #1597A8;
+$tone-light-grey: #E1E8F2;
+/* ===== ===== ===== ===== ===== ===== ===== ===== */
+
+/* SHADOW PALETTE */
+$shadow-xsmall: 0px 40px 80px rgba(22, 58, 95, 0.05);
+$shadow-small: 0px 4px 60px rgba(22, 58, 95, 0.07);
+$shadow-medium: 0px 0px 40px rgba(28, 202, 135, 0.1);
+$shadow-large: 0px 10px 80px rgba(28, 202, 135, 0.2);
+$shadow-xlarge: 0px 10px 30px rgba(22, 58, 95, 0.05);
+/* ===== ===== ===== ===== ===== ===== ===== ===== */
+
+.st {
+
+	/* COLOR ===== */
+	&.primary {
+		&-green {
+			&-bg {
+				background-color: $primary-green;
+			}
+			&-color {
+				color: $primary-green;
+			}
+			&-border {
+				border-color: $primary-green;
+			}
+		}
+		&-grey {
+			&-bg {
+				background-color: $primary-grey;
+			}
+			&-color {
+				color: $primary-grey;
+			}
+			&-border {
+				border-color: $primary-grey;
+			}
+		}
+		&-dark-blue {
+			&-bg {
+				background-color: $primary-dark-blue;
+			}
+			&-color {
+				color: $primary-dark-blue;
+			}
+			&-border {
+				border-color: $primary-dark-blue;
+			}
+		}
+	}
+
+	&.shade-grey {
+		&-1 {
+			&.shade-grey-1--bg {
+				background-color: $shade-greys-1;
+			}
+			&.shade-grey-1--color {
+				color: $shade-greys-1;
+			}
+			&.shade-grey-1--border {
+				border-color: $shade-greys-1;
+			}
+		}
+		&-2 {
+			&.shade-grey-1--bg {
+				background-color: $shade-greys-2;
+			}
+			&.shade-grey-1--color {
+				color: $shade-greys-2;
+			}
+			&.shade-grey-1--border {
+				border-color: $shade-greys-2;
+			}
+		}
+		&-3 {
+			&.shade-grey-1--bg {
+				background-color: $shade-greys-3;
+			}
+			&.shade-grey-1--color {
+				color: $shade-greys-3;
+			}
+			&.shade-grey-1--border {
+				border-color: $shade-greys-3;
+			}
+		}
+		&-4 {
+			&.shade-grey-1--bg {
+				background-color: $shade-greys-4;
+			}
+			&.shade-grey-1--color {
+				color: $shade-greys-4;
+			}
+			&.shade-grey-1--border {
+				border-color: $shade-greys-4;
+			}
+		}
+	}
+
+	&.tone {
+		&-light-green {
+			&-bg {
+				background-color: $tone-light-green;
+			}
+			&-color {
+				color: $tone-light-green;
+			}
+			&-border {
+				border-color: $tone-light-green;
+			}
+		}
+		&-red {
+			&-bg {
+				background-color: $tone-red;
+			}
+			&-color {
+				color: $tone-red;
+			}
+			&-border {
+				border-color: $tone-red;
+			}
+		}
+		&-orange {
+			&-bg {
+				background-color: $tone-orange;
+			}
+			&-color {
+				color: $tone-orange;
+			}
+			&-border {
+				border-color: $tone-orange;
+			}
+		}
+		&-sea-wave {
+			&-bg {
+				background-color: $tone-sea-wave;
+			}
+			&-color {
+				color: $tone-sea-wave;
+			}
+			&-border {
+				border-color: $tone-sea-wave;
+			}
+		}
+		&-light-grey {
+			&-bg {
+				background-color: $tone-light-grey;
+			}
+			&-color {
+				color: $tone-light-grey;
+			}
+			&-border {
+				border-color: $tone-light-grey;
+			}
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
+
+
+	/* SHADOW */
+	&.shadow {
+		&-xsmall {
+			box-shadow: $shadow-xsmall;
+		}
+		&-small {
+			box-shadow: $shadow-small;
+		}
+		&-medium {
+			box-shadow: $shadow-medium;
+		}
+		&-large {
+			box-shadow: $shadow-large;
+		}
+		&-xlarge {
+			box-shadow: $shadow-xlarge;
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
+}

@@ -5,20 +5,30 @@ section#sidebar.sidebar
 
     ol
       li
-        a.is-active(href="#") Colours
+        a.is-active(href="#" sidebar-btn-js data-id='1') Colours
+        div
+          a.is-active(href="#" sidebar-inner-btn-js data-container='1' data-inner-id='1') Primary colours
+          a(href="#" sidebar-inner-btn-js data-container='1' data-inner-id='2') Shade of greys
+          a(href="#" sidebar-inner-btn-js data-container='1' data-inner-id='3') Tone colours
+          a(href="#" sidebar-inner-btn-js data-container='1' data-inner-id='4') Shadows
       li
-        a(href="#") Typography
+        a(href="#" sidebar-btn-js data-id='2') Typography
+        div
+          a.is-active(href="#" sidebar-inner-btn-js data-container='2' data-inner-id='1') Headings
+          a(href="#" sidebar-inner-btn-js data-container='2' data-inner-id='2') Paragraphs
+          a(href="#" sidebar-inner-btn-js data-container='2' data-inner-id='3') Labels
+          a(href="#" sidebar-inner-btn-js data-container='2' data-inner-id='4') Text selection
       li
-        a(href="#") Layout & Grid
+        a.is-disabled(href="#" sidebar-btn-js data-id='3') Layout & Grid
       li
-        a(href="#") Forms
+        a.is-disabled(href="#" sidebar-btn-js data-id='4') Forms
       li
-        a(href="#") Buttons
+        a.is-disabled(href="#" sidebar-btn-js data-id='5') Buttons
       li
-        a(href="#") Placeholders
+        a.is-disabled(href="#" sidebar-btn-js data-id='6') Placeholders
       li
-        a(href="#") Navigation
+        a.is-disabled(href="#" sidebar-btn-js data-id='7') Navigation
       li
-        a(href="#") Containers
+        a.is-disabled(href="#" sidebar-btn-js data-id='8') Containers
 
 // SECTION :: END

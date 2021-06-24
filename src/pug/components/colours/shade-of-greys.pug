@@ -1,0 +1,56 @@
+// SECTION :: START
+
+p.ui__title Shade of greys
+p.ui__desc Use greys for shadows, borders and lines.
+
+.ui__content
+  .ui__color-wrapper
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #F3F5F7;')
+        .ui__color-body
+          p Grey #1
+          span #F3F5F7
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #EFF0F1;')
+        .ui__color-body
+          p Grey #2
+          span #EFF0F1
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #DDE0E3;')
+        .ui__color-body
+          p Grey #3
+          span #DDE0E3
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #CDD1D5;')
+        .ui__color-body
+          p Grey #4
+          span #CDD1D5
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.shade-grey-1.shade-grey-1--bg', '.st.shade-grey-1.shade-grey-1--color', '.st.shade-grey-1.shade-grey-1--border'], 'Add one of these classes to apply a greys colors for shadows, borders and lines')
+        +tableRow(['.st.shade-grey-2.shade-grey-1--bg', '.st.shade-grey-2.shade-grey-2--color', '.st.shade-grey-2.shade-grey-2--border'], 'Add one of these classes to apply a greys colors for shadows, borders and lines')
+        +tableRow(['.st.shade-grey-3.shade-grey-1--bg', '.st.shade-grey-3.shade-grey-3--color', '.st.shade-grey-3.shade-grey-3--border'], 'Add one of these classes to apply a greys colors for shadows, borders and lines')
+        +tableRow(['.st.shade-grey-4.shade-grey-1--bg', '.st.shade-grey-4.shade-grey-4--color', '.st.shade-grey-4.shade-grey-4--border'], 'Add one of these classes to apply a greys colors for shadows, borders and lines')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st shade-grey-1 shade-grey-1--bg'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shade-grey-1 shade-grey-1--color'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shade-grey-1 shade-grey-1--border'></div>`)
+
+    +codePreview('code-css', 'CSS', `.st.shade-grey-1.shade-grey-1--bg {\n  background-color: #F3F5F7;\n}`)
+    +codePreview('code-css', 'CSS', `.st.shade-grey-1.shade-grey-1--color {\n  color: #F3F5F7;\n}`)
+    +codePreview('code-css', 'CSS', `.st.shade-grey-1.shade-grey-1--border {\n  border-color: #F3F5F7;\n}`)
+
+// SECTION :: END

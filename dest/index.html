@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/statusgator-ui.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
   </head>
@@ -24,20 +25,495 @@
       </div>
     </header>
     <!-- HEADER :: END-->
+    <!-- SECTION :: START-->
+    <section class="sidebar" id="sidebar">
+      <div class="sidebar__wrapper">
+        <ol>
+          <li><a class="is-active" href="#" sidebar-btn-js data-id="1">Colours</a>
+            <div><a class="is-active" href="#" sidebar-inner-btn-js data-container="1" data-inner-id="1">Primary colours</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="2">Shade of greys</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="3">Tone colours</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="4">Shadows</a></div>
+          </li>
+          <li><a href="#" sidebar-btn-js data-id="2">Typography</a>
+            <div><a class="is-active" href="#" sidebar-inner-btn-js data-container="2" data-inner-id="1">Headings</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="2">Paragraphs</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="3">Labels</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="4">Text selection</a></div>
+          </li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="3">Layout & Grid</a></li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="4">Forms</a></li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="5">Buttons</a></li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="6">Placeholders</a></li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="7">Navigation</a></li>
+          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="8">Containers</a></li>
+        </ol>
+      </div>
+    </section>
+    <!-- SECTION :: END-->
     <div class="body body--start p-home">
       <!-- SECTION :: START-->
-      <section class="sidebar" id="sidebar">
-        <div class="sidebar__wrapper">
-          <ol>
-            <li><a class="is-active" href="#">Colours</a></li>
-            <li><a href="#">Typography</a></li>
-            <li><a href="#">Layout & Grid</a></li>
-            <li><a href="#">Forms</a></li>
-            <li><a href="#">Buttons</a></li>
-            <li><a href="#">Placeholders</a></li>
-            <li><a href="#">Navigation</a></li>
-            <li><a href="#">Containers</a></li>
-          </ol>
+      <section class="ui" id="ui">
+        <div class="c-grid">
+          <div class="ui__wrapper">
+            <div class="ui__container is-active" data-id="1">
+              <div class="ui__row is-active" data-inner-id="1">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Primary colours</p>
+                <p class="ui__desc">Customizing the default color palette for your project.</p>
+                <div class="ui__content">
+                  <div class="ui__color-wrapper">
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #21BF73;"></div>
+                        <div class="ui__color-body">
+                          <p>Gator green</p><span>#21BF73</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #1B2124;"></div>
+                        <div class="ui__color-body">
+                          <p>Gator grey</p><span>#1B2124</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #163A5F;"></div>
+                        <div class="ui__color-body">
+                          <p>Gator dark blue</p><span>#163A5F</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.primary-green-bg</code><code>.st.primary-green-color</code><code>.st.primary-green-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color, border-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.primary-grey-bg</code><code>.st.primary-grey-color</code><code>.st.primary-grey-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color, border-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.primary-dark-blue-bg</code><code>.st.primary-dark-blue-color</code><code>.st.primary-dark-blue-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color, border-color or color</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st primary-green-bg'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st primary-green-color'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st primary-green-border'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.primary-green-bg {
+  background-color: #21BF73;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.primary-green-color {
+  color: #21BF73;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.primary-green-border {
+  border-color: #21BF73;
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="2">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Shade of greys</p>
+                <p class="ui__desc">Use greys for shadows, borders and lines.</p>
+                <div class="ui__content">
+                  <div class="ui__color-wrapper">
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #F3F5F7;"></div>
+                        <div class="ui__color-body">
+                          <p>Grey #1</p><span>#F3F5F7</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #EFF0F1;"></div>
+                        <div class="ui__color-body">
+                          <p>Grey #2</p><span>#EFF0F1</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #DDE0E3;"></div>
+                        <div class="ui__color-body">
+                          <p>Grey #3</p><span>#DDE0E3</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #CDD1D5;"></div>
+                        <div class="ui__color-body">
+                          <p>Grey #4</p><span>#CDD1D5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shade-grey-1.shade-grey-1--bg</code><code>.st.shade-grey-1.shade-grey-1--color</code><code>.st.shade-grey-1.shade-grey-1--border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a greys colors for shadows, borders and lines</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shade-grey-2.shade-grey-1--bg</code><code>.st.shade-grey-2.shade-grey-2--color</code><code>.st.shade-grey-2.shade-grey-2--border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a greys colors for shadows, borders and lines</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shade-grey-3.shade-grey-1--bg</code><code>.st.shade-grey-3.shade-grey-3--color</code><code>.st.shade-grey-3.shade-grey-3--border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a greys colors for shadows, borders and lines</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shade-grey-4.shade-grey-1--bg</code><code>.st.shade-grey-4.shade-grey-4--color</code><code>.st.shade-grey-4.shade-grey-4--border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a greys colors for shadows, borders and lines</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shade-grey-1 shade-grey-1--bg'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shade-grey-1 shade-grey-1--color'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shade-grey-1 shade-grey-1--border'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shade-grey-1.shade-grey-1--bg {
+  background-color: #F3F5F7;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shade-grey-1.shade-grey-1--color {
+  color: #F3F5F7;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shade-grey-1.shade-grey-1--border {
+  border-color: #F3F5F7;
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="3">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Tone colours</p>
+                <div class="ui__content">
+                  <div class="ui__color-wrapper">
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #99F3BD;"></div>
+                        <div class="ui__color-body">
+                          <p>Light green</p><span>#99F3BD</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #FD5E53;"></div>
+                        <div class="ui__color-body">
+                          <p>Red</p><span>#FD5E53</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #F5BE4F;"></div>
+                        <div class="ui__color-body">
+                          <p>Orange</p><span>#F5BE4F</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #1597A8;"></div>
+                        <div class="ui__color-body">
+                          <p>Sea wave</p><span>#1597A8</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="background-color: #E1E8F2;"></div>
+                        <div class="ui__color-body">
+                          <p>Light grey</p><span>#E1E8F2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.tone-light-green-bg</code><code>.st.tone-light-green-color</code><code>.st.tone-light-green-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.tone-red-bg</code><code>.st.tone-red-color</code><code>.st.tone-red-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.tone-orange-bg</code><code>.st.tone-orange-color</code><code>.st.tone-orange-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.tone-sea-wave-bg</code><code>.st.tone-sea-wave-color</code><code>.st.tone-sea-wave-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color or color</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.tone-light-grey-bg</code><code>.st.tone-light-grey-color</code><code>.st.tone-light-grey-border</code>
+                            </div>
+                          </td>
+                          <td>Add one of these classes to apply a background-color or color</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st tone-light-green-bg'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st tone-light-green-color'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st tone-light-green-border'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.tone-light-green-bg {
+  background-color: #99F3BD;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.tone-light-green-color {
+  color: #99F3BD;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.tone-light-green-border {
+  border-color: #99F3BD;
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="4">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Shadows</p>
+                <div class="ui__content">
+                  <div class="ui__color-wrapper">
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);"></div>
+                        <div class="ui__color-body">
+                          <p>Shadow #1</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);"></div>
+                        <div class="ui__color-body">
+                          <p>Shadow #2</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);"></div>
+                        <div class="ui__color-body">
+                          <p>Shadow #3</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);"></div>
+                        <div class="ui__color-body">
+                          <p>Shadow #4</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__color">
+                        <div class="ui__color-head" style="box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);"></div>
+                        <div class="ui__color-body">
+                          <p>Shadow #5</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shadow-xsmall</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a extra small box shadow.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shadow-small</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a small box shadow.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shadow-medium</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a medium box shadow.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shadow-large</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a large box shadow.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.shadow-xlarge</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a very large box shadow.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shadow-xsmall'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shadow-small'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shadow-medium'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shadow-large'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st shadow-xlargee'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shadow-xsmall {
+  box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shadow-small {
+  box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shadow-medium {
+  box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shadow-large {
+  box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.shadow-xlarge {
+  box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+            </div>
+            <div class="ui__container" data-id="2">
+              <div class="ui__row is-active" data-inner-id="1">
+                <p class="ui__title">Headings</p>
+              </div>
+              <div class="ui__row" data-inner-id="2">
+                <p class="ui__title">Paragraphs</p>
+              </div>
+              <div class="ui__row" data-inner-id="3">
+                <p class="ui__title">Labels</p>
+              </div>
+              <div class="ui__row" data-inner-id="4">
+                <p class="ui__title">Text selection</p>
+              </div>
+            </div>
+            <div class="ui__container" data-id="3"></div>
+            <div class="ui__container" data-id="4"></div>
+            <div class="ui__container" data-id="5"></div>
+            <div class="ui__container" data-id="6"></div>
+            <div class="ui__container" data-id="7"></div>
+            <div class="ui__container" data-id="8"></div>
+          </div>
         </div>
       </section>
       <!-- SECTION :: END-->

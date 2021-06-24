@@ -1,0 +1,61 @@
+// SECTION :: START
+
+p.ui__title Shadows
+
+.ui__content
+  .ui__color-wrapper
+    div
+      .ui__color
+        .ui__color-head(style='box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);')
+        .ui__color-body
+          p Shadow #1
+    div
+      .ui__color
+        .ui__color-head(style='box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);')
+        .ui__color-body
+          p Shadow #2
+    div
+      .ui__color
+        .ui__color-head(style='box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);')
+        .ui__color-body
+          p Shadow #3
+    div
+      .ui__color
+        .ui__color-head(style='box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);')
+        .ui__color-body
+          p Shadow #4
+    div
+      .ui__color
+        .ui__color-head(style='box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);')
+        .ui__color-body
+          p Shadow #5
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.shadow-xsmall'], 'Add this class to apply a extra small box shadow.')
+        +tableRow(['.st.shadow-small'], 'Add this class to apply a small box shadow.')
+        +tableRow(['.st.shadow-medium'], 'Add this class to apply a medium box shadow.')
+        +tableRow(['.st.shadow-large'], 'Add this class to apply a large box shadow.')
+        +tableRow(['.st.shadow-xlarge'], 'Add this class to apply a very large box shadow.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st shadow-xsmall'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shadow-small'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shadow-medium'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shadow-large'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st shadow-xlargee'></div>`)
+
+    +codePreview('code-css', 'CSS', `.st.shadow-xsmall {\n  box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);\n}`)
+    +codePreview('code-css', 'CSS', `.st.shadow-small {\n  box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);\n}`)
+    +codePreview('code-css', 'CSS', `.st.shadow-medium {\n  box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);\n}`)
+    +codePreview('code-css', 'CSS', `.st.shadow-large {\n  box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);\n}`)
+    +codePreview('code-css', 'CSS', `.st.shadow-xlarge {\n  box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);\n}`)
+
+// SECTION :: END

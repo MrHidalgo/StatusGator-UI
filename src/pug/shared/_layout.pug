@@ -1,3 +1,5 @@
+include ../utilities/_mixin
+
 doctype html
 html(lang="en")
 
@@ -6,8 +8,8 @@ html(lang="en")
 
   body
 
-    block header
-      include ../components/header
+    include ../components/header
+    include ../components/sidebar
 
 
     block content

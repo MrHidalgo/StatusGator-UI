@@ -1,0 +1,62 @@
+// SECTION :: START
+
+p.ui__title Tone colours
+
+.ui__content
+  .ui__color-wrapper
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #99F3BD;')
+        .ui__color-body
+          p Light green
+          span #99F3BD
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #FD5E53;')
+        .ui__color-body
+          p Red
+          span #FD5E53
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #F5BE4F;')
+        .ui__color-body
+          p Orange
+          span #F5BE4F
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #1597A8;')
+        .ui__color-body
+          p Sea wave
+          span #1597A8
+    div
+      .ui__color
+        .ui__color-head(style='background-color: #E1E8F2;')
+        .ui__color-body
+          p Light grey
+          span #E1E8F2
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.tone-light-green-bg', '.st.tone-light-green-color', '.st.tone-light-green-border'], 'Add one of these classes to apply a background-color or color')
+        +tableRow(['.st.tone-red-bg', '.st.tone-red-color', '.st.tone-red-border'], 'Add one of these classes to apply a background-color or color')
+        +tableRow(['.st.tone-orange-bg', '.st.tone-orange-color', '.st.tone-orange-border'], 'Add one of these classes to apply a background-color or color')
+        +tableRow(['.st.tone-sea-wave-bg', '.st.tone-sea-wave-color', '.st.tone-sea-wave-border'], 'Add one of these classes to apply a background-color or color')
+        +tableRow(['.st.tone-light-grey-bg', '.st.tone-light-grey-color', '.st.tone-light-grey-border'], 'Add one of these classes to apply a background-color or color')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st tone-light-green-bg'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st tone-light-green-color'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st tone-light-green-border'></div>`)
+
+    +codePreview('code-css', 'CSS', `.st.tone-light-green-bg {\n  background-color: #99F3BD;\n}`)
+    +codePreview('code-css', 'CSS', `.st.tone-light-green-color {\n  color: #99F3BD;\n}`)
+    +codePreview('code-css', 'CSS', `.st.tone-light-green-border {\n  border-color: #99F3BD;\n}`)
+
+// SECTION :: END

@@ -10,6 +10,7 @@
 	width: 200px;
 	height: 100%;
 	padding: 30px 0;
+	box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.1);
 	background-color: #163A5F;
 
 	&__wrapper {
@@ -23,26 +24,56 @@
 
 			li {
 				display: flex;
+				flex-direction: column;
 				width: 100%;
-			}
 
-			a {
-				position: relative;
-				display: flex;
-				width: 100%;
-				padding: 0 20px;
-				background-color: transparent;
-				font-weight: 500;
-				font-size: 18px;
-				line-height: 50px;
-				color: #fff;
-				@include transition(background-color, color);
-
-				&:hover,
-				&.is-active {
-					background-color: #ffffff;
-					color: #163A5F;
+				> a {
+					position: relative;
+					display: flex;
+					width: 100%;
+					padding: 0 20px;
+					background-color: transparent;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 50px;
+					text-transform: uppercase;
+					color: #fff;
 					@include transition(background-color, color);
+
+					&.is-disabled {
+						pointer-events: none;
+						opacity: 0.55;
+					}
+
+					&:hover,
+					&.is-active {
+						background-color: #ffffff;
+						color: #163A5F;
+						@include transition(background-color, color);
+					}
+				}
+
+				> div {
+					display: flex;
+					flex-direction: column;
+					padding-left: 20px;
+
+					a {
+						display: flex;
+						padding: 0 0 0 20px;
+						font-weight: 500;
+						font-size: 15px;
+						line-height: 40px;
+						color: #fff;
+
+						&:hover {
+							text-decoration: underline;
+						}
+
+						&.is-active {
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 		}

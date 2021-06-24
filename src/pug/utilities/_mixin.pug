@@ -1,15 +1,22 @@
 //- MIXIN :: START
 
-include ./_mixin/_title
-include ./_mixin/_subtitle
-include ./_mixin/_btn
-include ./_mixin/_svg-icon
-include ./_mixin/_picture
-include ./_mixin/_logotype
-include ./_mixin/_hamburger
-include ./_mixin/_swiper
-include ./_mixin/_modal
-include ./_mixin/_nav
-include ./_mixin/_form
+mixin tableRow(codeValArr, descriptionVal)
+	tr
+		td
+			.ui__table-code
+				each val in codeValArr
+					code!= val
+		td!= descriptionVal
+
+
+mixin codePreview(classMod, labelName, varCodeVal)
+	pre.code(class!= classMod)
+		-
+			let str = varCodeVal;
+		label!= labelName
+		code
+			= str
+
 
 //- MIXIN :: END
+
