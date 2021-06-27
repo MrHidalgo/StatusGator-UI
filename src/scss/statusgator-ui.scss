@@ -196,4 +196,97 @@ $shadow-xlarge: 0px 10px 30px rgba(22, 58, 95, 0.05);
 		}
 	}
 	/* ===== ===== ===== ===== ===== */
+
+
+	/* HEADINGS */
+	&.heading {
+		&-xbig {
+			font-weight: bold;
+			font-size: 64px;
+			line-height: 88px;
+			color: #163A5F;
+		}
+		&-big {
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 66px;
+			color: #163A5F;
+		}
+		&-large {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 50px;
+			color: #163A5F;
+		}
+		&-medium {
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 41px;
+			color: #163A5F;
+		}
+		&-small {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 33px;
+			color: #163A5F;
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
+
+
+	/* PARAGRAPHS */
+	&.paragraphs {
+		&-large {
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 28px;
+			color: #576472;
+		}
+		&-medium {
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 26px;
+			color: #576472;
+		}
+		&-small {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 24px;
+			color: #576472;
+		}
+		&-xsmall {
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 20px;
+			color: #576472;
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
+
+
+	/* PARAGRAPHS */
+	&.labels {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #576472;
+
+		&-bold {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 24px;
+			color: #576472;
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
+
+
+	/* TEXT SELECTION */
+	&.mark {
+		mark {
+			background-color: #21bf73;
+			color: #ffffff;
+		}
+	}
+	/* ===== ===== ===== ===== ===== */
 }

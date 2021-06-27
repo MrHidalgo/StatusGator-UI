@@ -1,0 +1,28 @@
+// SECTION :: START
+
+p.ui__title Text selection
+
+.ui__content
+  .ui__type-wrapper
+    div
+      .ui__type
+        p.st.labels.mark!= "Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party. <mark>Meggings cred before they</mark> sold out messenger bag, ugh fashion axe Pitchfork tousled freegan asymmetrical literally twee Thundercats."
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.mark'], 'Represents text which is marked or highlighted for reference or notation purposes.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<p class='st labels mark'><mark></mark></p>`)
+
+    +codePreview('code-css', 'CSS', `.st.mark mark {\n  background-color: #21bf73;
+  color: #ffffff;\n}`)
+
+// SECTION :: END

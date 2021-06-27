@@ -653,4 +653,31 @@ picture {
   color: #576472;
 }
 
+/* line 227, src/scss/_components/ui.scss */
+.ui__type-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+}
+
+/* line 232, src/scss/_components/ui.scss */
+.ui__type-wrapper > div {
+  padding-bottom: 30px;
+}
+
+/* line 237, src/scss/_components/ui.scss */
+.ui__type span {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21BF73;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

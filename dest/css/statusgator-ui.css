@@ -179,6 +179,14 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* SHADOW */
   /* ===== ===== ===== ===== ===== */
+  /* HEADINGS */
+  /* ===== ===== ===== ===== ===== */
+  /* PARAGRAPHS */
+  /* ===== ===== ===== ===== ===== */
+  /* PARAGRAPHS */
+  /* ===== ===== ===== ===== ===== */
+  /* TEXT SELECTION */
+  /* ===== ===== ===== ===== ===== */
 }
 
 /* line 39, src/scss/statusgator-ui.scss */
@@ -389,6 +397,100 @@ picture {
 .st.shadow-xlarge {
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
           box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
+}
+
+/* line 203, src/scss/statusgator-ui.scss */
+.st.heading-xbig {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 88px;
+  color: #163A5F;
+}
+
+/* line 209, src/scss/statusgator-ui.scss */
+.st.heading-big {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 66px;
+  color: #163A5F;
+}
+
+/* line 215, src/scss/statusgator-ui.scss */
+.st.heading-large {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #163A5F;
+}
+
+/* line 221, src/scss/statusgator-ui.scss */
+.st.heading-medium {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #163A5F;
+}
+
+/* line 227, src/scss/statusgator-ui.scss */
+.st.heading-small {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #163A5F;
+}
+
+/* line 239, src/scss/statusgator-ui.scss */
+.st.paragraphs-large {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #576472;
+}
+
+/* line 245, src/scss/statusgator-ui.scss */
+.st.paragraphs-medium {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #576472;
+}
+
+/* line 251, src/scss/statusgator-ui.scss */
+.st.paragraphs-small {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #576472;
+}
+
+/* line 257, src/scss/statusgator-ui.scss */
+.st.paragraphs-xsmall {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #576472;
+}
+
+/* line 268, src/scss/statusgator-ui.scss */
+.st.labels {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #576472;
+}
+
+/* line 274, src/scss/statusgator-ui.scss */
+.st.labels-bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #576472;
+}
+
+/* line 286, src/scss/statusgator-ui.scss */
+.st.mark mark {
+  background-color: #21bf73;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

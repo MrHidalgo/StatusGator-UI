@@ -1,0 +1,51 @@
+// SECTION :: START
+
+p.ui__title Headings
+
+.ui__content
+  .ui__type-wrapper
+    div
+      .ui__type
+        h1.st.heading-xbig Solutions for everyone
+        span h1+
+    div
+      .ui__type
+        h1.st.heading-big Solutions for everyone
+        span h1
+    div
+      .ui__type
+        h2.st.heading-large Solutions for everyone
+        span h2
+    div
+      .ui__type
+        h3.st.heading-medium Solutions for everyone
+        span h3
+    div
+      .ui__type
+        h4.st.heading-small Solutions for everyone
+        span h4
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.heading-xbig'], 'Add this class to apply a xbig-sized heading.')
+        +tableRow(['.st.heading-big'], 'Add this class to apply a big-sized heading.')
+        +tableRow(['.st.heading-large'], 'Add this class to apply a large-sized heading.')
+        +tableRow(['.st.heading-medium'], 'Add this class to apply a medium-sized heading.')
+        +tableRow(['.st.heading-small'], 'Add this class to apply a small-sized heading.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st heading-xbig'></div>`)
+
+    +codePreview('code-css', 'CSS', `.st.heading-xbig {\n  font-weight: bold;
+  font-size: 64px;
+  line-height: 88px;
+  color: #163A5F;\n}`)
+
+// SECTION :: END

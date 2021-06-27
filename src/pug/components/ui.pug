@@ -4,9 +4,9 @@ section#ui.ui
   .c-grid
     .ui__wrapper
 
-      .ui__container.is-active(data-id='1')
+      .ui__container(data-id='1')
 
-        .ui__row.is-active(data-inner-id='1')
+        .ui__row(data-inner-id='1')
 
           include colours/primary-color
 
@@ -24,24 +24,24 @@ section#ui.ui
 
       .ui__container(data-id='2')
 
-        .ui__row.is-active(data-inner-id='1')
+        .ui__row(data-inner-id='1')
 
-          p.ui__title Headings
+          include typography/headings
 
         .ui__row(data-inner-id='2')
 
-          p.ui__title Paragraphs
+          include typography/paragraphs
 
         .ui__row(data-inner-id='3')
 
-          p.ui__title Labels
+          include typography/labels
 
         .ui__row(data-inner-id='4')
 
-          p.ui__title Text selection
+          include typography/text-selection
 
 
-      .ui__container(data-id='3')
+      .ui__container.is-active(data-id='3')
 
 
 

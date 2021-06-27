@@ -1,0 +1,46 @@
+// SECTION :: START
+
+p.ui__title Paragraphs
+
+.ui__content
+  .ui__type-wrapper
+    div
+      .ui__type
+        p.st.paragraphs-large Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span P18 - large
+    div
+      .ui__type
+        p.st.paragraphs-medium Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span P16 - large
+    div
+      .ui__type
+        p.st.paragraphs-small Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span P14 - bold
+    div
+      .ui__type
+        p.st.paragraphs-xsmall Portland ugh fashion axe Helvetica, YOLO Echo Park Austin gastropub roof party.
+        span P12 - Regular
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.paragraphs-large'], 'Add this class to apply a large-sized paragraphs.')
+        +tableRow(['.st.paragraphs-medium'], 'Add this class to apply a medium-sized paragraphs.')
+        +tableRow(['.st.paragraphs-small'], 'Add this class to apply a small-sized paragraphs.')
+        +tableRow(['.st.paragraphs-xsmall'], 'Add this class to apply a xsmall-sized paragraphs.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st paragraphs-large'></div>`)
+
+    +codePreview('code-css', 'CSS', `.st.paragraphs-large {\n  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #576472;\n}`)
+
+// SECTION :: END
