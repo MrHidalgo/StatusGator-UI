@@ -1,0 +1,34 @@
+// SECTION :: START
+
+p.ui__title Corner radius
+
+.ui__content
+  .ui__radius-wrapper
+    div
+      .ui__radius.st.rounded-lg
+    div
+      .ui__radius.st.rounded-md
+    div
+      .ui__radius.st.rounded-sm
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.rounded-lg', '.st.rounded-md', '.st.rounded-sm'], 'Add classes to an element to easily round its corners.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class='st rounded-lg'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st rounded-md'></div>`)
+    +codePreview('code-html', 'HTML', `<div class='st rounded-sm'></div>`)
+    +codePreview('code-css', 'CSS', `.st.rounded-lg {\n  border-radius: 20px;\n}`)
+    +codePreview('code-css', 'CSS', `.st.rounded-md {\n  border-radius: 10px;\n}`)
+    +codePreview('code-css', 'CSS', `.st.rounded-sm {\n  border-radius: 6px;\n}`)
+
+
+// SECTION :: END

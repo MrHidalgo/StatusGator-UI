@@ -1,0 +1,196 @@
+// SECTION :: START
+
+p.ui__title Layouts
+
+.ui__content
+  .ui__layouts-wrapper
+    div
+      .ui__layouts
+        p.ui__layouts-title Responsive
+        p.ui__layouts-desc Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md & lg viewport widths.
+
+        .st.container
+          .st.row
+            .st.col-xs-12.col-sm-3.col-md-2.col-lg-1
+              span
+            .st.col-xs-6.col-sm-6.col-md-8.col-lg-10
+              span
+            .st.col-xs-6.col-sm-3.col-md-2.col-lg-1
+              span
+          .st.row
+            .st.col-xs-12.col-sm-3.col-md-2.col-lg-1
+              span
+            .st.col-xs-12.col-sm-9.col-md-10.col-lg-11
+              span
+          .st.row
+            .st.col-xs-10.col-sm-6.col-md-8.col-lg-10
+              span
+            .st.col-xs-2.col-sm-6.col-md-4.col-lg-2
+              span
+
+    div
+      .ui__layouts
+        p.ui__layouts-title Fluid
+        p.ui__layouts-desc Percent based widths allow fluid resizing of columns and rows.
+
+        .st.container
+          .st.row
+            .st.col-xs-12
+              span
+          .st.row
+            .st.col-xs-1
+              span
+            .st.col-xs-11
+              span
+          .st.row
+            .st.col-xs-2
+              span
+            .st.col-xs-10
+              span
+          .st.row
+            .st.col-xs-3
+              span
+            .st.col-xs-9
+              span
+          .st.row
+            .st.col-xs-4
+              span
+            .st.col-xs-8
+              span
+          .st.row
+            .st.col-xs-5
+              span
+            .st.col-xs-7
+              span
+          .st.row
+            .st.col-xs-6
+              span
+            .st.col-xs-6
+              span
+
+    div
+      .ui__layouts
+        p.ui__layouts-title Offsets
+        p.ui__layouts-desc Offset a column
+
+        .st.container
+          .st.row
+            .st.col-xs-offset-11.col-xs-1
+              span
+          .st.row
+            .st.col-xs-offset-10.col-xs-2
+              span
+          .st.row
+            .st.col-xs-offset-9.col-xs-3
+              span
+          .st.row
+            .st.col-xs-offset-8.col-xs-4
+              span
+          .st.row
+            .st.col-xs-offset-7.col-xs-5
+              span
+          .st.row
+            .st.col-xs-offset-6.col-xs-6
+              span
+          .st.row
+            .st.col-xs-offset-5.col-xs-7
+              span
+          .st.row
+            .st.col-xs-offset-4.col-xs-8
+              span
+          .st.row
+            .st.col-xs-offset-3.col-xs-9
+              span
+          .st.row
+            .st.col-xs-offset-2.col-xs-10
+              span
+          .st.row
+            .st.col-xs-offset-1.col-xs-11
+              span
+
+    div
+      .ui__layouts
+        p.ui__layouts-title Auto Width
+        p.ui__layouts-desc Add any number of auto sizing columns to a row. Let the grid figure it out.
+
+        .st.container
+          .st.row
+            .st.col-xs
+              span
+            .st.col-xs
+              span
+          .st.row
+            .st.col-xs
+              span
+            .st.col-xs
+              span
+            .st.col-xs
+              span
+
+
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.container', '.st.container-fluid'], 'Use .container for a responsive pixel width, .container-fluid for width: 100% across all viewports and devices, or a responsive container for a combination of fluid and pixel widths.')
+        +tableRow(['.st.row'], 'Each column has horizontal padding (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side.')
+        +tableRow(['.st.col-xs', '.st.col-xs-1', '.st.col-xs-2', '.st.col-xs-3', '.st.col-xs-4', '.st.col-xs-5', '.st.col-xs-6', '.st.col-xs-7', '.st.col-xs-8', '.st.col-xs-9', '.st.col-xs-10', '.st.col-xs-11', '.st.col-xs-12'], 'There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.')
+        +tableRow(['.st.col-xs-offset', '.st.col-xs-offset-1', '.st.col-xs-offset-2', '.st.col-xs-offset-3', '.st.col-xs-offset-4', '.st.col-xs-offset-5', '.st.col-xs-offset-6', '.st.col-xs-offset-7', '.st.col-xs-offset-8', '.st.col-xs-offset-9', '.st.col-xs-offset-10', '.st.col-xs-offset-11', '.st.col-xs-offset-12'], 'You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.')
+        +tableRow(['.st.col-sm', '.st.col-sm-1', '.st.col-sm-2', '.st.col-sm-3', '.st.col-sm-4', '.st.col-sm-5', '.st.col-sm-6', '.st.col-sm-7', '.st.col-sm-8', '.st.col-sm-9', '.st.col-sm-10', '.st.col-sm-11', '.st.col-sm-12'], 'There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.')
+        +tableRow(['.st.col-sm-offset', '.st.col-sm-offset-1', '.st.col-sm-offset-2', '.st.col-sm-offset-3', '.st.col-sm-offset-4', '.st.col-sm-offset-5', '.st.col-sm-offset-6', '.st.col-sm-offset-7', '.st.col-sm-offset-8', '.st.col-sm-offset-9', '.st.col-sm-offset-10', '.st.col-sm-offset-11', '.st.col-sm-offset-12'], 'You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.')
+        +tableRow(['.st.col-md', '.st.col-md-1', '.st.col-md-2', '.st.col-md-3', '.st.col-md-4', '.st.col-md-5', '.st.col-md-6', '.st.col-md-7', '.st.col-md-8', '.st.col-md-9', '.st.col-md-10', '.st.col-md-11', '.st.col-md-12'], 'There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.')
+        +tableRow(['.st.col-md-offset', '.st.col-md-offset-1', '.st.col-md-offset-2', '.st.col-md-offset-3', '.st.col-md-offset-4', '.st.col-md-offset-5', '.st.col-md-offset-6', '.st.col-md-offset-7', '.st.col-md-offset-8', '.st.col-md-offset-9', '.st.col-md-offset-10', '.st.col-md-offset-11', '.st.col-md-offset-12'], 'You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.')
+        +tableRow(['.st.col-lg', '.st.col-lg-1', '.st.col-lg-2', '.st.col-lg-3', '.st.col-lg-4', '.st.col-lg-5', '.st.col-lg-6', '.st.col-lg-7', '.st.col-lg-8', '.st.col-lg-9', '.st.col-lg-10', '.st.col-lg-11', '.st.col-lg-12'], 'There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.')
+        +tableRow(['.st.col-lg-offset', '.st.col-lg-offset-1', '.st.col-lg-offset-2', '.st.col-lg-offset-3', '.st.col-lg-offset-4', '.st.col-lg-offset-5', '.st.col-lg-offset-6', '.st.col-lg-offset-7', '.st.col-lg-offset-8', '.st.col-lg-offset-9', '.st.col-lg-offset-10', '.st.col-lg-offset-11', '.st.col-lg-offset-12'], 'You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.')
+
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st container">
+  <div class="st row">
+    <div class="st col-xs"></div>
+    <div class="st col-xs"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs"></div>
+    <div class="st col-xs"></div>
+    <div class="st col-xs"></div>
+  </div>
+</div>
+`)
+    +codePreview('code-html', 'HTML', `<div class="st container">
+  <div class="st row">
+    <div class="st col-xs-offset-11 col-xs-1"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs-offset-10 col-xs-2"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs-offset-9 col-xs-3"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs-offset-8 col-xs-4"></div>
+  </div>
+</div>
+`)
+    +codePreview('code-html', 'HTML', `<div class="st container">
+  <div class="st row">
+    <div class="st col-xs-12"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs-1"></div>
+    <div class="st col-xs-11"></div>
+  </div>
+  <div class="st row">
+    <div class="st col-xs-2"></div>
+    <div class="st col-xs-10"></div>
+  </div>
+</div>
+`)
+
+// SECTION :: END

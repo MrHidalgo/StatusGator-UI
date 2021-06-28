@@ -22,6 +22,7 @@ section#ui.ui
 
           include colours/shadow
 
+
       .ui__container(data-id='2')
 
         .ui__row(data-inner-id='1')
@@ -43,7 +44,13 @@ section#ui.ui
 
       .ui__container.is-active(data-id='3')
 
+        .ui__row(data-inner-id='1')
 
+          //include layout-grid/layouts
+
+        .ui__row.is-active(data-inner-id='2')
+
+          include layout-grid/corner-radius
 
       .ui__container(data-id='4')
 

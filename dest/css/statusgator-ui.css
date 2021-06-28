@@ -173,7 +173,9 @@ picture {
 /* ===== ===== ===== ===== ===== ===== ===== ===== */
 /* SHADOW PALETTE */
 /* ===== ===== ===== ===== ===== ===== ===== ===== */
-/* line 34, src/scss/statusgator-ui.scss */
+/* CORNER RADIUS */
+/* ===== ===== ===== ===== ===== ===== ===== ===== */
+/* line 40, src/scss/statusgator-ui.scss */
 .st {
   /* COLOR ===== */
   /* ===== ===== ===== ===== ===== */
@@ -187,219 +189,223 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* TEXT SELECTION */
   /* ===== ===== ===== ===== ===== */
+  /* LAYOUTS */
+  /* ===== ===== ===== ===== ===== */
+  /* CORNER RADIUS */
+  /* ===== ===== ===== ===== ===== */
 }
 
-/* line 39, src/scss/statusgator-ui.scss */
+/* line 45, src/scss/statusgator-ui.scss */
 .st.primary-green-bg {
   background-color: #21BF73;
 }
 
-/* line 42, src/scss/statusgator-ui.scss */
+/* line 48, src/scss/statusgator-ui.scss */
 .st.primary-green-color {
   color: #21BF73;
 }
 
-/* line 45, src/scss/statusgator-ui.scss */
+/* line 51, src/scss/statusgator-ui.scss */
 .st.primary-green-border {
   border-color: #21BF73;
 }
 
-/* line 50, src/scss/statusgator-ui.scss */
+/* line 56, src/scss/statusgator-ui.scss */
 .st.primary-grey-bg {
   background-color: #1B2124;
 }
 
-/* line 53, src/scss/statusgator-ui.scss */
+/* line 59, src/scss/statusgator-ui.scss */
 .st.primary-grey-color {
   color: #1B2124;
 }
 
-/* line 56, src/scss/statusgator-ui.scss */
+/* line 62, src/scss/statusgator-ui.scss */
 .st.primary-grey-border {
   border-color: #1B2124;
 }
 
-/* line 61, src/scss/statusgator-ui.scss */
+/* line 67, src/scss/statusgator-ui.scss */
 .st.primary-dark-blue-bg {
   background-color: #163A5F;
 }
 
-/* line 64, src/scss/statusgator-ui.scss */
+/* line 70, src/scss/statusgator-ui.scss */
 .st.primary-dark-blue-color {
   color: #163A5F;
 }
 
-/* line 67, src/scss/statusgator-ui.scss */
+/* line 73, src/scss/statusgator-ui.scss */
 .st.primary-dark-blue-border {
   border-color: #163A5F;
 }
 
-/* line 75, src/scss/statusgator-ui.scss */
+/* line 81, src/scss/statusgator-ui.scss */
 .st.shade-grey-1.shade-grey-1--bg {
   background-color: #F3F5F7;
 }
 
-/* line 78, src/scss/statusgator-ui.scss */
+/* line 84, src/scss/statusgator-ui.scss */
 .st.shade-grey-1.shade-grey-1--color {
   color: #F3F5F7;
 }
 
-/* line 81, src/scss/statusgator-ui.scss */
+/* line 87, src/scss/statusgator-ui.scss */
 .st.shade-grey-1.shade-grey-1--border {
   border-color: #F3F5F7;
 }
 
-/* line 86, src/scss/statusgator-ui.scss */
+/* line 92, src/scss/statusgator-ui.scss */
 .st.shade-grey-2.shade-grey-1--bg {
   background-color: #EFF0F1;
 }
 
-/* line 89, src/scss/statusgator-ui.scss */
+/* line 95, src/scss/statusgator-ui.scss */
 .st.shade-grey-2.shade-grey-1--color {
   color: #EFF0F1;
 }
 
-/* line 92, src/scss/statusgator-ui.scss */
+/* line 98, src/scss/statusgator-ui.scss */
 .st.shade-grey-2.shade-grey-1--border {
   border-color: #EFF0F1;
 }
 
-/* line 97, src/scss/statusgator-ui.scss */
+/* line 103, src/scss/statusgator-ui.scss */
 .st.shade-grey-3.shade-grey-1--bg {
   background-color: #DDE0E3;
 }
 
-/* line 100, src/scss/statusgator-ui.scss */
+/* line 106, src/scss/statusgator-ui.scss */
 .st.shade-grey-3.shade-grey-1--color {
   color: #DDE0E3;
 }
 
-/* line 103, src/scss/statusgator-ui.scss */
+/* line 109, src/scss/statusgator-ui.scss */
 .st.shade-grey-3.shade-grey-1--border {
   border-color: #DDE0E3;
 }
 
-/* line 108, src/scss/statusgator-ui.scss */
+/* line 114, src/scss/statusgator-ui.scss */
 .st.shade-grey-4.shade-grey-1--bg {
   background-color: #CDD1D5;
 }
 
-/* line 111, src/scss/statusgator-ui.scss */
+/* line 117, src/scss/statusgator-ui.scss */
 .st.shade-grey-4.shade-grey-1--color {
   color: #CDD1D5;
 }
 
-/* line 114, src/scss/statusgator-ui.scss */
+/* line 120, src/scss/statusgator-ui.scss */
 .st.shade-grey-4.shade-grey-1--border {
   border-color: #CDD1D5;
 }
 
-/* line 122, src/scss/statusgator-ui.scss */
+/* line 128, src/scss/statusgator-ui.scss */
 .st.tone-light-green-bg {
   background-color: #99F3BD;
 }
 
-/* line 125, src/scss/statusgator-ui.scss */
+/* line 131, src/scss/statusgator-ui.scss */
 .st.tone-light-green-color {
   color: #99F3BD;
 }
 
-/* line 128, src/scss/statusgator-ui.scss */
+/* line 134, src/scss/statusgator-ui.scss */
 .st.tone-light-green-border {
   border-color: #99F3BD;
 }
 
-/* line 133, src/scss/statusgator-ui.scss */
+/* line 139, src/scss/statusgator-ui.scss */
 .st.tone-red-bg {
   background-color: #FD5E53;
 }
 
-/* line 136, src/scss/statusgator-ui.scss */
+/* line 142, src/scss/statusgator-ui.scss */
 .st.tone-red-color {
   color: #FD5E53;
 }
 
-/* line 139, src/scss/statusgator-ui.scss */
+/* line 145, src/scss/statusgator-ui.scss */
 .st.tone-red-border {
   border-color: #FD5E53;
 }
 
-/* line 144, src/scss/statusgator-ui.scss */
+/* line 150, src/scss/statusgator-ui.scss */
 .st.tone-orange-bg {
   background-color: #F5BE4F;
 }
 
-/* line 147, src/scss/statusgator-ui.scss */
+/* line 153, src/scss/statusgator-ui.scss */
 .st.tone-orange-color {
   color: #F5BE4F;
 }
 
-/* line 150, src/scss/statusgator-ui.scss */
+/* line 156, src/scss/statusgator-ui.scss */
 .st.tone-orange-border {
   border-color: #F5BE4F;
 }
 
-/* line 155, src/scss/statusgator-ui.scss */
+/* line 161, src/scss/statusgator-ui.scss */
 .st.tone-sea-wave-bg {
   background-color: #1597A8;
 }
 
-/* line 158, src/scss/statusgator-ui.scss */
+/* line 164, src/scss/statusgator-ui.scss */
 .st.tone-sea-wave-color {
   color: #1597A8;
 }
 
-/* line 161, src/scss/statusgator-ui.scss */
+/* line 167, src/scss/statusgator-ui.scss */
 .st.tone-sea-wave-border {
   border-color: #1597A8;
 }
 
-/* line 166, src/scss/statusgator-ui.scss */
+/* line 172, src/scss/statusgator-ui.scss */
 .st.tone-light-grey-bg {
   background-color: #E1E8F2;
 }
 
-/* line 169, src/scss/statusgator-ui.scss */
+/* line 175, src/scss/statusgator-ui.scss */
 .st.tone-light-grey-color {
   color: #E1E8F2;
 }
 
-/* line 172, src/scss/statusgator-ui.scss */
+/* line 178, src/scss/statusgator-ui.scss */
 .st.tone-light-grey-border {
   border-color: #E1E8F2;
 }
 
-/* line 182, src/scss/statusgator-ui.scss */
+/* line 188, src/scss/statusgator-ui.scss */
 .st.shadow-xsmall {
   -webkit-box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);
           box-shadow: 0px 40px 80px rgba(22, 58, 95, 0.05);
 }
 
-/* line 185, src/scss/statusgator-ui.scss */
+/* line 191, src/scss/statusgator-ui.scss */
 .st.shadow-small {
   -webkit-box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);
           box-shadow: 0px 4px 60px rgba(22, 58, 95, 0.07);
 }
 
-/* line 188, src/scss/statusgator-ui.scss */
+/* line 194, src/scss/statusgator-ui.scss */
 .st.shadow-medium {
   -webkit-box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);
           box-shadow: 0px 0px 40px rgba(28, 202, 135, 0.1);
 }
 
-/* line 191, src/scss/statusgator-ui.scss */
+/* line 197, src/scss/statusgator-ui.scss */
 .st.shadow-large {
   -webkit-box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);
           box-shadow: 0px 10px 80px rgba(28, 202, 135, 0.2);
 }
 
-/* line 194, src/scss/statusgator-ui.scss */
+/* line 200, src/scss/statusgator-ui.scss */
 .st.shadow-xlarge {
   -webkit-box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
           box-shadow: 0px 10px 30px rgba(22, 58, 95, 0.05);
 }
 
-/* line 203, src/scss/statusgator-ui.scss */
+/* line 209, src/scss/statusgator-ui.scss */
 .st.heading-xbig {
   font-weight: bold;
   font-size: 64px;
@@ -407,7 +413,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 209, src/scss/statusgator-ui.scss */
+/* line 215, src/scss/statusgator-ui.scss */
 .st.heading-big {
   font-weight: bold;
   font-size: 48px;
@@ -415,7 +421,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 215, src/scss/statusgator-ui.scss */
+/* line 221, src/scss/statusgator-ui.scss */
 .st.heading-large {
   font-weight: bold;
   font-size: 36px;
@@ -423,7 +429,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 221, src/scss/statusgator-ui.scss */
+/* line 227, src/scss/statusgator-ui.scss */
 .st.heading-medium {
   font-weight: bold;
   font-size: 30px;
@@ -431,7 +437,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 227, src/scss/statusgator-ui.scss */
+/* line 233, src/scss/statusgator-ui.scss */
 .st.heading-small {
   font-weight: bold;
   font-size: 24px;
@@ -439,7 +445,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 239, src/scss/statusgator-ui.scss */
+/* line 245, src/scss/statusgator-ui.scss */
 .st.paragraphs-large {
   font-weight: normal;
   font-size: 18px;
@@ -447,7 +453,7 @@ picture {
   color: #576472;
 }
 
-/* line 245, src/scss/statusgator-ui.scss */
+/* line 251, src/scss/statusgator-ui.scss */
 .st.paragraphs-medium {
   font-weight: normal;
   font-size: 16px;
@@ -455,7 +461,7 @@ picture {
   color: #576472;
 }
 
-/* line 251, src/scss/statusgator-ui.scss */
+/* line 257, src/scss/statusgator-ui.scss */
 .st.paragraphs-small {
   font-weight: bold;
   font-size: 14px;
@@ -463,7 +469,7 @@ picture {
   color: #576472;
 }
 
-/* line 257, src/scss/statusgator-ui.scss */
+/* line 263, src/scss/statusgator-ui.scss */
 .st.paragraphs-xsmall {
   font-weight: normal;
   font-size: 12px;
@@ -471,7 +477,7 @@ picture {
   color: #576472;
 }
 
-/* line 268, src/scss/statusgator-ui.scss */
+/* line 274, src/scss/statusgator-ui.scss */
 .st.labels {
   font-weight: normal;
   font-size: 14px;
@@ -479,7 +485,7 @@ picture {
   color: #576472;
 }
 
-/* line 274, src/scss/statusgator-ui.scss */
+/* line 280, src/scss/statusgator-ui.scss */
 .st.labels-bold {
   font-weight: bold;
   font-size: 14px;
@@ -487,10 +493,728 @@ picture {
   color: #576472;
 }
 
-/* line 286, src/scss/statusgator-ui.scss */
+/* line 292, src/scss/statusgator-ui.scss */
 .st.mark mark {
   background-color: #21bf73;
   color: #ffffff;
+}
+
+/* line 301, src/scss/statusgator-ui.scss */
+.st.container-fluid, .st.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 308, src/scss/statusgator-ui.scss */
+.st.container-fluid {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* line 313, src/scss/statusgator-ui.scss */
+.st.row {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+/* line 331, src/scss/statusgator-ui.scss */
+.st.col-xs, .st.col-xs-1, .st.col-xs-2, .st.col-xs-3, .st.col-xs-4, .st.col-xs-5, .st.col-xs-6, .st.col-xs-7, .st.col-xs-8, .st.col-xs-9, .st.col-xs-10, .st.col-xs-11, .st.col-xs-12, .st.col-xs-offset-0, .st.col-xs-offset-1, .st.col-xs-offset-2, .st.col-xs-offset-3, .st.col-xs-offset-4, .st.col-xs-offset-5, .st.col-xs-offset-6, .st.col-xs-offset-7, .st.col-xs-offset-8, .st.col-xs-offset-9, .st.col-xs-offset-10, .st.col-xs-offset-11, .st.col-xs-offset-12 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* line 365, src/scss/statusgator-ui.scss */
+.st.col-xs {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  -webkit-flex-basis: 0;
+          flex-basis: 0;
+  max-width: 100%;
+}
+
+/* line 374, src/scss/statusgator-ui.scss */
+.st.col-xs-1 {
+  -ms-flex-preferred-size: 8.33333333%;
+  -webkit-flex-basis: 8.33333333%;
+          flex-basis: 8.33333333%;
+  max-width: 8.33333333%;
+}
+
+/* line 380, src/scss/statusgator-ui.scss */
+.st.col-xs-2 {
+  -ms-flex-preferred-size: 16.66666667%;
+  -webkit-flex-basis: 16.66666667%;
+          flex-basis: 16.66666667%;
+  max-width: 16.66666667%;
+}
+
+/* line 386, src/scss/statusgator-ui.scss */
+.st.col-xs-3 {
+  -ms-flex-preferred-size: 25%;
+  -webkit-flex-basis: 25%;
+          flex-basis: 25%;
+  max-width: 25%;
+}
+
+/* line 392, src/scss/statusgator-ui.scss */
+.st.col-xs-4 {
+  -ms-flex-preferred-size: 33.33333333%;
+  -webkit-flex-basis: 33.33333333%;
+          flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
+}
+
+/* line 398, src/scss/statusgator-ui.scss */
+.st.col-xs-5 {
+  -ms-flex-preferred-size: 41.66666667%;
+  -webkit-flex-basis: 41.66666667%;
+          flex-basis: 41.66666667%;
+  max-width: 41.66666667%;
+}
+
+/* line 404, src/scss/statusgator-ui.scss */
+.st.col-xs-6 {
+  -ms-flex-preferred-size: 50%;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+  max-width: 50%;
+}
+
+/* line 410, src/scss/statusgator-ui.scss */
+.st.col-xs-7 {
+  -ms-flex-preferred-size: 58.33333333%;
+  -webkit-flex-basis: 58.33333333%;
+          flex-basis: 58.33333333%;
+  max-width: 58.33333333%;
+}
+
+/* line 416, src/scss/statusgator-ui.scss */
+.st.col-xs-8 {
+  -ms-flex-preferred-size: 66.66666667%;
+  -webkit-flex-basis: 66.66666667%;
+          flex-basis: 66.66666667%;
+  max-width: 66.66666667%;
+}
+
+/* line 422, src/scss/statusgator-ui.scss */
+.st.col-xs-9 {
+  -ms-flex-preferred-size: 75%;
+  -webkit-flex-basis: 75%;
+          flex-basis: 75%;
+  max-width: 75%;
+}
+
+/* line 428, src/scss/statusgator-ui.scss */
+.st.col-xs-10 {
+  -ms-flex-preferred-size: 83.33333333%;
+  -webkit-flex-basis: 83.33333333%;
+          flex-basis: 83.33333333%;
+  max-width: 83.33333333%;
+}
+
+/* line 434, src/scss/statusgator-ui.scss */
+.st.col-xs-11 {
+  -ms-flex-preferred-size: 91.66666667%;
+  -webkit-flex-basis: 91.66666667%;
+          flex-basis: 91.66666667%;
+  max-width: 91.66666667%;
+}
+
+/* line 440, src/scss/statusgator-ui.scss */
+.st.col-xs-12 {
+  -ms-flex-preferred-size: 100%;
+  -webkit-flex-basis: 100%;
+          flex-basis: 100%;
+  max-width: 100%;
+}
+
+/* line 446, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-0 {
+  margin-left: 0;
+}
+
+/* line 450, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 454, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 458, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 462, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 466, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 470, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 474, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 478, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 482, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 486, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 490, src/scss/statusgator-ui.scss */
+.st.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 495, src/scss/statusgator-ui.scss */
+  .st.container {
+    max-width: 49rem;
+  }
+  /* line 499, src/scss/statusgator-ui.scss */
+  .st.col-sm, .st.col-sm-1, .st.col-sm-2, .st.col-sm-3, .st.col-sm-4, .st.col-sm-5, .st.col-sm-6, .st.col-sm-7, .st.col-sm-8, .st.col-sm-9, .st.col-sm-10, .st.col-sm-11, .st.col-sm-12, .st.col-sm-offset-0, .st.col-sm-offset-1, .st.col-sm-offset-2, .st.col-sm-offset-3, .st.col-sm-offset-4, .st.col-sm-offset-5, .st.col-sm-offset-6, .st.col-sm-offset-7, .st.col-sm-offset-8, .st.col-sm-offset-9, .st.col-sm-offset-10, .st.col-sm-offset-11, .st.col-sm-offset-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 533, src/scss/statusgator-ui.scss */
+  .st.col-sm {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    -webkit-flex-basis: 0;
+            flex-basis: 0;
+    max-width: 100%;
+  }
+  /* line 542, src/scss/statusgator-ui.scss */
+  .st.col-sm-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+    -webkit-flex-basis: 8.33333333%;
+            flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  /* line 548, src/scss/statusgator-ui.scss */
+  .st.col-sm-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+    -webkit-flex-basis: 16.66666667%;
+            flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+  /* line 554, src/scss/statusgator-ui.scss */
+  .st.col-sm-3 {
+    -ms-flex-preferred-size: 25%;
+    -webkit-flex-basis: 25%;
+            flex-basis: 25%;
+    max-width: 25%;
+  }
+  /* line 560, src/scss/statusgator-ui.scss */
+  .st.col-sm-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+    -webkit-flex-basis: 33.33333333%;
+            flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+  /* line 566, src/scss/statusgator-ui.scss */
+  .st.col-sm-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+    -webkit-flex-basis: 41.66666667%;
+            flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+  /* line 572, src/scss/statusgator-ui.scss */
+  .st.col-sm-6 {
+    -ms-flex-preferred-size: 50%;
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%;
+    max-width: 50%;
+  }
+  /* line 578, src/scss/statusgator-ui.scss */
+  .st.col-sm-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+    -webkit-flex-basis: 58.33333333%;
+            flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  /* line 584, src/scss/statusgator-ui.scss */
+  .st.col-sm-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+    -webkit-flex-basis: 66.66666667%;
+            flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  /* line 590, src/scss/statusgator-ui.scss */
+  .st.col-sm-9 {
+    -ms-flex-preferred-size: 75%;
+    -webkit-flex-basis: 75%;
+            flex-basis: 75%;
+    max-width: 75%;
+  }
+  /* line 596, src/scss/statusgator-ui.scss */
+  .st.col-sm-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+    -webkit-flex-basis: 83.33333333%;
+            flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+  /* line 602, src/scss/statusgator-ui.scss */
+  .st.col-sm-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+    -webkit-flex-basis: 91.66666667%;
+            flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+  /* line 608, src/scss/statusgator-ui.scss */
+  .st.col-sm-12 {
+    -ms-flex-preferred-size: 100%;
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    max-width: 100%;
+  }
+  /* line 614, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-0 {
+    margin-left: 0;
+  }
+  /* line 618, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 622, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 626, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 630, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 634, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 638, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 642, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 646, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 650, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 654, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 658, src/scss/statusgator-ui.scss */
+  .st.col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  /* line 664, src/scss/statusgator-ui.scss */
+  .st.container {
+    max-width: 65rem;
+  }
+  /* line 668, src/scss/statusgator-ui.scss */
+  .st.col-md, .st.col-md-1, .st.col-md-2, .st.col-md-3, .st.col-md-4, .st.col-md-5, .st.col-md-6, .st.col-md-7, .st.col-md-8, .st.col-md-9, .st.col-md-10, .st.col-md-11, .st.col-md-12, .st.col-md-offset-0, .st.col-md-offset-1, .st.col-md-offset-2, .st.col-md-offset-3, .st.col-md-offset-4, .st.col-md-offset-5, .st.col-md-offset-6, .st.col-md-offset-7, .st.col-md-offset-8, .st.col-md-offset-9, .st.col-md-offset-10, .st.col-md-offset-11, .st.col-md-offset-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 702, src/scss/statusgator-ui.scss */
+  .st.col-md {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    -webkit-flex-basis: 0;
+            flex-basis: 0;
+    max-width: 100%;
+  }
+  /* line 711, src/scss/statusgator-ui.scss */
+  .st.col-md-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+    -webkit-flex-basis: 8.33333333%;
+            flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  /* line 717, src/scss/statusgator-ui.scss */
+  .st.col-md-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+    -webkit-flex-basis: 16.66666667%;
+            flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+  /* line 723, src/scss/statusgator-ui.scss */
+  .st.col-md-3 {
+    -ms-flex-preferred-size: 25%;
+    -webkit-flex-basis: 25%;
+            flex-basis: 25%;
+    max-width: 25%;
+  }
+  /* line 729, src/scss/statusgator-ui.scss */
+  .st.col-md-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+    -webkit-flex-basis: 33.33333333%;
+            flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+  /* line 735, src/scss/statusgator-ui.scss */
+  .st.col-md-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+    -webkit-flex-basis: 41.66666667%;
+            flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+  /* line 741, src/scss/statusgator-ui.scss */
+  .st.col-md-6 {
+    -ms-flex-preferred-size: 50%;
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%;
+    max-width: 50%;
+  }
+  /* line 747, src/scss/statusgator-ui.scss */
+  .st.col-md-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+    -webkit-flex-basis: 58.33333333%;
+            flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  /* line 753, src/scss/statusgator-ui.scss */
+  .st.col-md-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+    -webkit-flex-basis: 66.66666667%;
+            flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  /* line 759, src/scss/statusgator-ui.scss */
+  .st.col-md-9 {
+    -ms-flex-preferred-size: 75%;
+    -webkit-flex-basis: 75%;
+            flex-basis: 75%;
+    max-width: 75%;
+  }
+  /* line 765, src/scss/statusgator-ui.scss */
+  .st.col-md-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+    -webkit-flex-basis: 83.33333333%;
+            flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+  /* line 771, src/scss/statusgator-ui.scss */
+  .st.col-md-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+    -webkit-flex-basis: 91.66666667%;
+            flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+  /* line 777, src/scss/statusgator-ui.scss */
+  .st.col-md-12 {
+    -ms-flex-preferred-size: 100%;
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    max-width: 100%;
+  }
+  /* line 783, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-0 {
+    margin-left: 0;
+  }
+  /* line 787, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 791, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 795, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 799, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 803, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 807, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 811, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 815, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 819, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 823, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 827, src/scss/statusgator-ui.scss */
+  .st.col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 833, src/scss/statusgator-ui.scss */
+  .st.container {
+    max-width: 76rem;
+  }
+  /* line 837, src/scss/statusgator-ui.scss */
+  .st.col-lg, .st.col-lg-1, .st.col-lg-2, .st.col-lg-3, .st.col-lg-4, .st.col-lg-5, .st.col-lg-6, .st.col-lg-7, .st.col-lg-8, .st.col-lg-9, .st.col-lg-10, .st.col-lg-11, .st.col-lg-12, .st.col-lg-offset-0, .st.col-lg-offset-1, .st.col-lg-offset-2, .st.col-lg-offset-3, .st.col-lg-offset-4, .st.col-lg-offset-5, .st.col-lg-offset-6, .st.col-lg-offset-7, .st.col-lg-offset-8, .st.col-lg-offset-9, .st.col-lg-offset-10, .st.col-lg-offset-11, .st.col-lg-offset-12 {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* line 871, src/scss/statusgator-ui.scss */
+  .st.col-lg {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    -webkit-flex-basis: 0;
+            flex-basis: 0;
+    max-width: 100%;
+  }
+  /* line 880, src/scss/statusgator-ui.scss */
+  .st.col-lg-1 {
+    -ms-flex-preferred-size: 8.33333333%;
+    -webkit-flex-basis: 8.33333333%;
+            flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  /* line 886, src/scss/statusgator-ui.scss */
+  .st.col-lg-2 {
+    -ms-flex-preferred-size: 16.66666667%;
+    -webkit-flex-basis: 16.66666667%;
+            flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+  /* line 892, src/scss/statusgator-ui.scss */
+  .st.col-lg-3 {
+    -ms-flex-preferred-size: 25%;
+    -webkit-flex-basis: 25%;
+            flex-basis: 25%;
+    max-width: 25%;
+  }
+  /* line 898, src/scss/statusgator-ui.scss */
+  .st.col-lg-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+    -webkit-flex-basis: 33.33333333%;
+            flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+  /* line 904, src/scss/statusgator-ui.scss */
+  .st.col-lg-5 {
+    -ms-flex-preferred-size: 41.66666667%;
+    -webkit-flex-basis: 41.66666667%;
+            flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+  /* line 910, src/scss/statusgator-ui.scss */
+  .st.col-lg-6 {
+    -ms-flex-preferred-size: 50%;
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%;
+    max-width: 50%;
+  }
+  /* line 916, src/scss/statusgator-ui.scss */
+  .st.col-lg-7 {
+    -ms-flex-preferred-size: 58.33333333%;
+    -webkit-flex-basis: 58.33333333%;
+            flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  /* line 922, src/scss/statusgator-ui.scss */
+  .st.col-lg-8 {
+    -ms-flex-preferred-size: 66.66666667%;
+    -webkit-flex-basis: 66.66666667%;
+            flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  /* line 928, src/scss/statusgator-ui.scss */
+  .st.col-lg-9 {
+    -ms-flex-preferred-size: 75%;
+    -webkit-flex-basis: 75%;
+            flex-basis: 75%;
+    max-width: 75%;
+  }
+  /* line 934, src/scss/statusgator-ui.scss */
+  .st.col-lg-10 {
+    -ms-flex-preferred-size: 83.33333333%;
+    -webkit-flex-basis: 83.33333333%;
+            flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+  /* line 940, src/scss/statusgator-ui.scss */
+  .st.col-lg-11 {
+    -ms-flex-preferred-size: 91.66666667%;
+    -webkit-flex-basis: 91.66666667%;
+            flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+  /* line 946, src/scss/statusgator-ui.scss */
+  .st.col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    max-width: 100%;
+  }
+  /* line 952, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-0 {
+    margin-left: 0;
+  }
+  /* line 956, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  /* line 960, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  /* line 964, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 968, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  /* line 972, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  /* line 976, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 980, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  /* line 984, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  /* line 988, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 992, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  /* line 996, src/scss/statusgator-ui.scss */
+  .st.col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+}
+
+/* line 1005, src/scss/statusgator-ui.scss */
+.st.rounded-lg {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+
+/* line 1008, src/scss/statusgator-ui.scss */
+.st.rounded-md {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+/* line 1011, src/scss/statusgator-ui.scss */
+.st.rounded-sm {
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

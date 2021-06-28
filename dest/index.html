@@ -33,9 +33,11 @@
             <div><a class="is-active" href="#" sidebar-inner-btn-js data-container="1" data-inner-id="1">Primary colours</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="2">Shade of greys</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="3">Tone colours</a><a href="#" sidebar-inner-btn-js data-container="1" data-inner-id="4">Shadows</a></div>
           </li>
           <li><a href="#" sidebar-btn-js data-id="2">Typography</a>
-            <div><a class="is-active" href="#" sidebar-inner-btn-js data-container="2" data-inner-id="1">Headings</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="2">Paragraphs</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="3">Labels</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="4">Text selection</a></div>
+            <div><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="1">Headings</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="2">Paragraphs</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="3">Labels</a><a href="#" sidebar-inner-btn-js data-container="2" data-inner-id="4">Text selection</a></div>
           </li>
-          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="3">Layout & Grid</a></li>
+          <li><a href="#" sidebar-btn-js data-id="3">Layout & Grid</a>
+            <div><a href="#" sidebar-inner-btn-js data-container="3" data-inner-id="1">Layouts</a><a href="#" sidebar-inner-btn-js data-container="3" data-inner-id="2">Corner radius</a></div>
+          </li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="4">Forms</a></li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="5">Buttons</a></li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="6">Placeholders</a></li>
@@ -782,7 +784,70 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container is-active" data-id="3"></div>
+            <div class="ui__container is-active" data-id="3">
+              <div class="ui__row" data-inner-id="1">
+                <!--include layout-grid/layouts-->
+              </div>
+              <div class="ui__row is-active" data-inner-id="2">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Corner radius</p>
+                <div class="ui__content">
+                  <div class="ui__radius-wrapper">
+                    <div>
+                      <div class="ui__radius st rounded-lg"></div>
+                    </div>
+                    <div>
+                      <div class="ui__radius st rounded-md"></div>
+                    </div>
+                    <div>
+                      <div class="ui__radius st rounded-sm"></div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.rounded-lg</code><code>.st.rounded-md</code><code>.st.rounded-sm</code>
+                            </div>
+                          </td>
+                          <td>Add classes to an element to easily round its corners.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st rounded-lg'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st rounded-md'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class='st rounded-sm'&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.rounded-lg {
+  border-radius: 20px;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.rounded-md {
+  border-radius: 10px;
+}</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.rounded-sm {
+  border-radius: 6px;
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+            </div>
             <div class="ui__container" data-id="4"></div>
             <div class="ui__container" data-id="5"></div>
             <div class="ui__container" data-id="6"></div>
