@@ -1,0 +1,62 @@
+// SECTION :: START
+
+p.ui__title Base
+
+.ui__content
+
+  .ui__base-wrapper
+    div
+      .ui__base
+        p.ui__base-title Light green
+        .st.base.base--lightGreen
+    div
+      .ui__base
+        p.ui__base-title With light grey border
+        .st.base.base--lightGreyBorder
+    div
+      .ui__base
+        p.ui__base-title With grey border
+        .st.base.base--greyBorder
+    div
+      .ui__base
+        p.ui__base-title Grey
+        .st.base.base--grey
+    div
+      .ui__base
+        p.ui__base-title With green border
+        .st.base.base--greenBorder
+    div
+      .ui__base
+        p.ui__base-title With light shadow
+        .st.base.base--lightShadow
+    div
+      .ui__base
+        p.ui__base-title With darker shadow
+        .st.base.base--darkerShadow
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.base.base--lightGreen'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--lightGreyBorder'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--greyBorder'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--grey'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--greenBorder'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--lightShadow'], 'Add this class to apply a base style for container.')
+        +tableRow(['.st.base.base--darkerShadow'], 'Add this class to apply a base style for container.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st base base--darkerShadow"></div>`)
+    +codePreview('code-css', 'CSS', `.st.base--darkerShadow {
+  border-radius: 8px;
+  box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+  background-color: #FFFFFF;
+}`)
+
+// SECTION :: END

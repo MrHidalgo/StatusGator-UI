@@ -680,7 +680,7 @@ picture {
   color: #21BF73;
 }
 
-/* line 247, src/scss/_components/ui.scss */
+/* line 246, src/scss/_components/ui.scss */
 .ui__layouts-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -694,12 +694,12 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 252, src/scss/_components/ui.scss */
+/* line 251, src/scss/_components/ui.scss */
 .ui__layouts-wrapper > div {
   padding-bottom: 15px;
 }
 
-/* line 257, src/scss/_components/ui.scss */
+/* line 256, src/scss/_components/ui.scss */
 .ui__layouts-title {
   padding-bottom: 5px;
   font-weight: 600;
@@ -708,14 +708,14 @@ picture {
   color: #163A5F;
 }
 
-/* line 265, src/scss/_components/ui.scss */
+/* line 264, src/scss/_components/ui.scss */
 .ui__layouts-desc {
   padding-bottom: 20px;
   font-size: 14px;
   color: #163A5F;
 }
 
-/* line 271, src/scss/_components/ui.scss */
+/* line 270, src/scss/_components/ui.scss */
 .ui__layouts span {
   display: block;
   width: 100%;
@@ -723,13 +723,13 @@ picture {
   background-color: #333333;
 }
 
-/* line 278, src/scss/_components/ui.scss */
+/* line 277, src/scss/_components/ui.scss */
 .ui__layouts [class*='col-'] {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* line 285, src/scss/_components/ui.scss */
+/* line 283, src/scss/_components/ui.scss */
 .ui__radius {
   display: -webkit-box;
   display: -webkit-flex;
@@ -745,7 +745,7 @@ picture {
   background-color: #333;
 }
 
-/* line 292, src/scss/_components/ui.scss */
+/* line 290, src/scss/_components/ui.scss */
 .ui__radius-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -761,12 +761,12 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 298, src/scss/_components/ui.scss */
+/* line 296, src/scss/_components/ui.scss */
 .ui__radius-wrapper > div {
   padding-right: 32px;
 }
 
-/* line 306, src/scss/_components/ui.scss */
+/* line 303, src/scss/_components/ui.scss */
 .ui__form-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -785,18 +785,60 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 315, src/scss/_components/ui.scss */
+/* line 312, src/scss/_components/ui.scss */
 .ui__form-wrapper:not(:first-of-type) {
   margin-top: 30px;
 }
 
-/* line 320, src/scss/_components/ui.scss */
+/* line 317, src/scss/_components/ui.scss */
 .ui__form-title {
   padding-bottom: 5px;
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
   color: #163A5F;
+}
+
+/* line 327, src/scss/_components/ui.scss */
+.ui__base-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin-bottom: 50px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid #EFEFEF;
+  background-color: #ffffff;
+}
+
+/* line 336, src/scss/_components/ui.scss */
+.ui__base-wrapper:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+/* line 341, src/scss/_components/ui.scss */
+.ui__base-title {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #163A5F;
+}
+
+/* line 349, src/scss/_components/ui.scss */
+.ui__base .st.base {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

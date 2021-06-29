@@ -242,7 +242,6 @@
 		}
 	}
 
-
 	&__layouts {
 		&-wrapper {
 			display: flex;
@@ -281,7 +280,6 @@
 		}
 	}
 
-
 	&__radius {
 		display: flex;
 		flex-direction: column;
@@ -300,7 +298,6 @@
 			}
 		}
 	}
-
 
 	&__form {
 		&-wrapper {
@@ -323,6 +320,38 @@
 			font-size: 16px;
 			line-height: 32px;
 			color: #163A5F;
+		}
+	}
+
+	&__base {
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			margin-bottom: 50px;
+			border-radius: 8px;
+			border: 1px solid #EFEFEF;
+			background-color: #ffffff;
+
+			&:not(:first-of-type) {
+				margin-top: 30px;
+			}
+		}
+
+		&-title {
+			padding-bottom: 5px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 32px;
+			color: #163A5F;
+		}
+
+		.st.base {
+			width: 100%;
+			max-width: 300px;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }

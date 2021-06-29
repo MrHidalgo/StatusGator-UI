@@ -48,7 +48,9 @@
           <li><a href="#" sidebar-btn-js data-id="7">Navigation</a>
             <div><a href="#" sidebar-inner-btn-js data-container="7" data-inner-id="1">Menu</a></div>
           </li>
-          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="8">Containers</a></li>
+          <li><a href="#" sidebar-btn-js data-id="8">Containers</a>
+            <div><a href="#" sidebar-inner-btn-js data-container="8" data-inner-id="1">Base</a><a href="#" sidebar-inner-btn-js data-container="8" data-inner-id="2">Information</a></div>
+          </li>
         </ol>
       </div>
     </section>
@@ -1574,7 +1576,7 @@
               <div class="ui__row" data-inner-id="1"></div>
             </div>
             <div class="ui__container" data-id="6">
-              <div class="ui__row is-active" data-inner-id="1">
+              <div class="ui__row" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Avatars</p>
                 <div class="ui__content">
@@ -1598,8 +1600,8 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container is-active" data-id="7">
-              <div class="ui__row is-active" data-inner-id="1">
+            <div class="ui__container" data-id="7">
+              <div class="ui__row" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Menu</p>
                 <div class="ui__content">
@@ -1634,7 +1636,133 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container" data-id="8"></div>
+            <div class="ui__container is-active" data-id="8">
+              <div class="ui__row is-active" data-inner-id="1">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Base</p>
+                <div class="ui__content">
+                  <div class="ui__base-wrapper">
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">Light green</p>
+                        <div class="st base base--lightGreen"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">With light grey border</p>
+                        <div class="st base base--lightGreyBorder"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">With grey border</p>
+                        <div class="st base base--greyBorder"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">Grey</p>
+                        <div class="st base base--grey"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">With green border</p>
+                        <div class="st base base--greenBorder"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">With light shadow</p>
+                        <div class="st base base--lightShadow"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__base">
+                        <p class="ui__base-title">With darker shadow</p>
+                        <div class="st base base--darkerShadow"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--lightGreen</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--lightGreyBorder</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--greyBorder</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--grey</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--greenBorder</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--lightShadow</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.base.base--darkerShadow</code>
+                            </div>
+                          </td>
+                          <td>Add this class to apply a base style for container.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st base base--darkerShadow&quot;&gt;&lt;/div&gt;</code></pre>
+                    <pre class="code code-css">
+                      <label>CSS</label><code>.st.base--darkerShadow {
+  border-radius: 8px;
+  box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
+  background-color: #FFFFFF;
+}</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row is-active" data-inner-id="2"></div>
+            </div>
           </div>
         </div>
       </section>
