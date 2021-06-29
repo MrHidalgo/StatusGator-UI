@@ -1,0 +1,31 @@
+// SECTION :: START
+
+p.ui__title Menu
+
+.ui__content
+  .ui__form-wrapper
+    div
+      .ui__form(style='padding-bottom: 20px;')
+        p.ui__form-title Row
+        .st.navigation__wrapper
+          a.st.navigation(href="#") Home
+          a.st.navigation(href="#") Home
+    div
+      .ui__form(style='padding-bottom: 20px;')
+        p.ui__form-title Column
+        .st.navigation__wrapper.navigation__wrapper--column
+          a.st.navigation(href="#") Home
+          a.st.navigation(href="#") Home
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st navigation__wrapper">
+  <a class="st navigation" href="#">Home</a>
+  <a class="st navigation" href="#">Home</a>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st navigation__wrapper navigation__wrapper--column">
+  <a class="st navigation" href="#">Home</a>
+  <a class="st navigation" href="#">Home</a>
+</div>`)
+
+// SECTION :: END

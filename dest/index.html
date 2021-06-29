@@ -45,7 +45,9 @@
           <li><a href="#" sidebar-btn-js data-id="6">Placeholders</a>
             <div><a href="#" sidebar-inner-btn-js data-container="6" data-inner-id="1">Avatars</a></div>
           </li>
-          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="7">Navigation</a></li>
+          <li><a href="#" sidebar-btn-js data-id="7">Navigation</a>
+            <div><a href="#" sidebar-inner-btn-js data-container="7" data-inner-id="1">Menu</a></div>
+          </li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="8">Containers</a></li>
         </ol>
       </div>
@@ -1571,7 +1573,7 @@
             <div class="ui__container" data-id="5">
               <div class="ui__row" data-inner-id="1"></div>
             </div>
-            <div class="ui__container is-active" data-id="6">
+            <div class="ui__container" data-id="6">
               <div class="ui__row is-active" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Avatars</p>
@@ -1596,7 +1598,42 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container" data-id="7"></div>
+            <div class="ui__container is-active" data-id="7">
+              <div class="ui__row is-active" data-inner-id="1">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Menu</p>
+                <div class="ui__content">
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form" style="padding-bottom: 20px;">
+                        <p class="ui__form-title">Row</p>
+                        <div class="st navigation__wrapper"><a class="st navigation" href="#">Home</a><a class="st navigation" href="#">Home</a></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__form" style="padding-bottom: 20px;">
+                        <p class="ui__form-title">Column</p>
+                        <div class="st navigation__wrapper navigation__wrapper--column"><a class="st navigation" href="#">Home</a><a class="st navigation" href="#">Home</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st navigation__wrapper&quot;&gt;
+  &lt;a class=&quot;st navigation&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a class=&quot;st navigation&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st navigation__wrapper navigation__wrapper--column&quot;&gt;
+  &lt;a class=&quot;st navigation&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+  &lt;a class=&quot;st navigation&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+            </div>
             <div class="ui__container" data-id="8"></div>
           </div>
         </div>

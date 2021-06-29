@@ -199,7 +199,7 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* AVATARS */
   /* ===== ===== ===== ===== ===== */
-  /*  */
+  /* MENU */
   /* ===== ===== ===== ===== ===== */
 }
 
@@ -2266,6 +2266,72 @@ picture {
   font-size: 12px;
   text-align: center;
   color: #FFFFFF;
+}
+
+/* line 1655, src/scss/statusgator-ui.scss */
+.st.navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #163A5F;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1667, src/scss/statusgator-ui.scss */
+.st.navigation:hover {
+  color: #99F3BD;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1672, src/scss/statusgator-ui.scss */
+.st.navigation:active {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1677, src/scss/statusgator-ui.scss */
+.st.navigation__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 1682, src/scss/statusgator-ui.scss */
+.st.navigation__wrapper.navigation__wrapper--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

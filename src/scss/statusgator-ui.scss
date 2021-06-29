@@ -1651,6 +1651,38 @@ $rounded-sm: 6px;
 	/* ===== ===== ===== ===== ===== */
 
 
-	/*  */
+	/* MENU */
+	&.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		color: #163A5F;
+		@include transition(color);
+
+		&:hover {
+			color: #99F3BD;
+			@include transition(color);
+		}
+
+		&:active {
+			color: #21BF73;
+			@include transition(color);
+		}
+
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&.navigation__wrapper--column {
+				flex-direction: column;
+			}
+		}
+	}
 	/* ===== ===== ===== ===== ===== */
 }
