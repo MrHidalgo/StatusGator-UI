@@ -1,0 +1,95 @@
+// SECTION :: START
+
+p.ui__title Dropdown
+
+.ui__content
+  .ui__form-wrapper
+    div
+      .ui__form(style='margin-bottom: 20px;')
+        .st.dropdown
+          a.st.dropdown__toggle(href="#")
+            div
+              p Choose
+            div
+              i
+          .st.dropdown__menu
+            a.st.dropdown__item(href="#" data-val='Option 1') Option 1
+            a.st.dropdown__item(href="#" data-val='Option 2') Option 2
+            a.st.dropdown__item(href="#" data-val='Option 3') Option 3
+            a.st.dropdown__item(href="#" data-val='Option 4') Option 4
+            a.st.dropdown__item(href="#" data-val='Option 5') Option 5
+            a.st.dropdown__item(href="#" data-val='Option 6') Option 6
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st dropdown">
+  <a class="st dropdown__toggle" href="#">
+    <div>
+      <p>Choose</p>
+    </div>
+    <div>
+      <i></i>
+    </div>
+  </a>
+  <div class="st dropdown__menu">
+    <a class="st dropdown__item" href="#" data-val="Option 1">Option 1</a>
+    <a class="st dropdown__item" href="#" data-val="Option 2">Option 2</a>
+    <a class="st dropdown__item" href="#" data-val="Option 3">Option 3</a>
+    <a class="st dropdown__item" href="#" data-val="Option 4">Option 4</a>
+    <a class="st dropdown__item" href="#" data-val="Option 5">Option 5</a>
+    <a class="st dropdown__item" href="#" data-val="Option 6">Option 6</a>
+  </div>
+</div>`)
+    +codePreview('code-javascript', 'JS', `for(let i = 0; i < document.querySelectorAll('.st.dropdown__toggle').length; i++) {
+  const btn =  document.querySelectorAll('.st.dropdown__toggle')[i];
+
+  btn.addEventListener('click', (ev) => {
+    const el = ev.currentTarget;
+
+    el.parentNode.classList.contains('is-open')
+      ? el.parentNode.classList.remove('is-open')
+      : el.parentNode.classList.add('is-open');
+
+  });
+}`)
+    +codePreview('code-javascript', 'JS', `for(let i = 0; i < document.querySelectorAll('.st.dropdown__item').length; i++) {
+  const btn =  document.querySelectorAll('.st.dropdown__item')[i];
+
+  btn.addEventListener('click', (ev) => {
+    const el = ev.currentTarget;
+
+    el.classList.contains('is-active')
+      ? el.classList.remove('is-active')
+      : el.classList.add('is-active');
+
+  });
+}`)
+
+script.
+  for(let i = 0; i < document.querySelectorAll('.st.dropdown__toggle').length; i++) {
+    const btn =  document.querySelectorAll('.st.dropdown__toggle')[i];
+
+    btn.addEventListener('click', (ev) => {
+      const el = ev.currentTarget;
+
+      el.parentNode.classList.contains('is-open')
+        ? el.parentNode.classList.remove('is-open')
+        : el.parentNode.classList.add('is-open');
+
+    });
+  }
+
+  for(let i = 0; i < document.querySelectorAll('.st.dropdown__item').length; i++) {
+    const btn =  document.querySelectorAll('.st.dropdown__item')[i];
+
+    btn.addEventListener('click', (ev) => {
+      const el = ev.currentTarget;
+
+      el.classList.contains('is-active')
+        ? el.classList.remove('is-active')
+        : el.classList.add('is-active');
+
+    });
+  }
+
+// SECTION :: END

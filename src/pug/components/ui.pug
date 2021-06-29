@@ -4,9 +4,9 @@ section#ui.ui
   .c-grid
     .ui__wrapper
 
-      .ui__container(data-id='1')
+      .ui__container.is-active(data-id='1')
 
-        .ui__row(data-inner-id='1')
+        .ui__row.is-active(data-inner-id='1')
 
           include colours/primary-color
 
@@ -42,19 +42,33 @@ section#ui.ui
           include typography/text-selection
 
 
-      .ui__container.is-active(data-id='3')
+      .ui__container(data-id='3')
 
         .ui__row(data-inner-id='1')
 
-          //include layout-grid/layouts
+          include layout-grid/layouts
 
-        .ui__row.is-active(data-inner-id='2')
+        .ui__row(data-inner-id='2')
 
           include layout-grid/corner-radius
 
       .ui__container(data-id='4')
 
+        .ui__row(data-inner-id='1')
 
+          include forms/input-fields
+
+        .ui__row(data-inner-id='2')
+
+          include forms/selection-controls
+
+        .ui__row(data-inner-id='3')
+
+          include forms/search-forms
+
+        .ui__row(data-inner-id='4')
+
+          include forms/dropdown
 
       .ui__container(data-id='5')
 

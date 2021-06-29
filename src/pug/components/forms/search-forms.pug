@@ -1,0 +1,23 @@
+// SECTION :: START
+
+p.ui__title Search forms
+
+.ui__content
+  .ui__form-wrapper
+    div
+      .ui__form
+        .st.form
+          .st.form__field
+            input.st.form__search(type='search' name='' placeholder='Search...')
+            i.st.form__search-icon
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__search" type="search" name="" placeholder="Search..." />
+    <i class="st form__search-icon"></i>
+  </div>
+</div>`)
+
+// SECTION :: END

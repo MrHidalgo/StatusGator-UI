@@ -193,6 +193,14 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* CORNER RADIUS */
   /* ===== ===== ===== ===== ===== */
+  /* FORMS */
+  /* ===== ===== ===== ===== ===== */
+  /* DROPDOWN */
+  /* ===== ===== ===== ===== ===== */
+  /*  */
+  /* ===== ===== ===== ===== ===== */
+  /*  */
+  /* ===== ===== ===== ===== ===== */
 }
 
 /* line 45, src/scss/statusgator-ui.scss */
@@ -1215,6 +1223,1014 @@ picture {
 .st.rounded-sm {
   -webkit-border-radius: 6px;
           border-radius: 6px;
+}
+
+/* line 1019, src/scss/statusgator-ui.scss */
+.st.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1026, src/scss/statusgator-ui.scss */
+.st.form__field {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+}
+
+/* line 1033, src/scss/statusgator-ui.scss */
+.st.form__field.is-error .st.form__input {
+  border-color: #FD5E53;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1040, src/scss/statusgator-ui.scss */
+.st.form__field.is-load .st.form__input {
+  padding-right: 50px;
+}
+
+/* line 1046, src/scss/statusgator-ui.scss */
+.st.form__field.is-copy .st.form__input {
+  padding-right: 55px;
+}
+
+/* line 1052, src/scss/statusgator-ui.scss */
+.st.form__label {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 1058, src/scss/statusgator-ui.scss */
+.st.form__input {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid #EFEFEF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.st.form__input.placeholder {
+  font-size: 14px;
+  color: #8D9091;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.st.form__input:-moz-placeholder {
+  font-size: 14px;
+  color: #8D9091;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.st.form__input::-moz-placeholder {
+  font-size: 14px;
+  color: #8D9091;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.st.form__input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #8D9091;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.st.form__input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #8D9091;
+}
+
+/* line 1077, src/scss/statusgator-ui.scss */
+.st.form__input[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* line 1082, src/scss/statusgator-ui.scss */
+.st.form__input[disabled]:hover {
+  border-color: #EFEFEF;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1088, src/scss/statusgator-ui.scss */
+.st.form__input:hover {
+  border-color: #CBDBE3;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1093, src/scss/statusgator-ui.scss */
+.st.form__input:focus {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1099, src/scss/statusgator-ui.scss */
+.st.form__search {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 0 16px 0 70px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: rgba(241, 244, 248, 0.5);
+  font-size: 14px;
+  color: #21BF73;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.st.form__search.placeholder {
+  font-size: 14px;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.st.form__search:-moz-placeholder {
+  font-size: 14px;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.st.form__search::-moz-placeholder {
+  font-size: 14px;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.st.form__search:-ms-input-placeholder {
+  font-size: 14px;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.st.form__search::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1118, src/scss/statusgator-ui.scss */
+.st.form__search:focus, .st.form__search:active {
+  color: #21BF73;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.st.form__search:focus.placeholder, .st.form__search:active.placeholder {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.st.form__search:focus:-moz-placeholder, .st.form__search:active:-moz-placeholder {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.st.form__search:focus::-moz-placeholder, .st.form__search:active::-moz-placeholder {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.st.form__search:focus:-ms-input-placeholder, .st.form__search:active:-ms-input-placeholder {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.st.form__search:focus::-webkit-input-placeholder, .st.form__search:active::-webkit-input-placeholder {
+  color: #21BF73;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1126, src/scss/statusgator-ui.scss */
+.st.form__search:focus + .st.form__search-icon, .st.form__search:active + .st.form__search-icon {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1130, src/scss/statusgator-ui.scss */
+.st.form__search:focus + .st.form__search-icon:before, .st.form__search:active + .st.form__search-icon:before {
+  background-color: #21BF73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1137, src/scss/statusgator-ui.scss */
+.st.form__search-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 36px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #163A5F;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1149, src/scss/statusgator-ui.scss */
+.st.form__search-icon:before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: -5px;
+  width: 8px;
+  height: 2px;
+  -webkit-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
+  background-color: #163a5f;
+  -webkit-transform: rotate(-49deg);
+      -ms-transform: rotate(-49deg);
+          transform: rotate(-49deg);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1164, src/scss/statusgator-ui.scss */
+.st.form__toggle {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 30px;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  -webkit-box-shadow: inset 0 1px 4px #ADBCD1;
+          box-shadow: inset 0 1px 4px #ADBCD1;
+  background-color: #D0DBEA;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 1175, src/scss/statusgator-ui.scss */
+.st.form__toggle:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px 0 #ABBED8;
+          box-shadow: 0 0 5px 0 #ABBED8;
+  background-color: #FFFFFF;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 1189, src/scss/statusgator-ui.scss */
+.st.form__toggle-input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 1195, src/scss/statusgator-ui.scss */
+.st.form__toggle-input:checked {
+  opacity: 1;
+}
+
+/* line 1198, src/scss/statusgator-ui.scss */
+.st.form__toggle-input:checked + .st.form__toggle {
+  -webkit-box-shadow: inset 0 1px 4px #11834C;
+          box-shadow: inset 0 1px 4px #11834C;
+  background-color: #21BF73;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 1203, src/scss/statusgator-ui.scss */
+.st.form__toggle-input:checked + .st.form__toggle:before {
+  -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+          transform: translateX(30px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 1212, src/scss/statusgator-ui.scss */
+.st.form__checkbox {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 1219, src/scss/statusgator-ui.scss */
+.st.form__checkbox u {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(22, 58, 95, 0.5);
+  background-color: transparent;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1231, src/scss/statusgator-ui.scss */
+.st.form__checkbox u:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #21BF73;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1246, src/scss/statusgator-ui.scss */
+.st.form__checkbox span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #163A5F;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1253, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 1262, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input:checked + .st.form__checkbox u {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1266, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input:checked + .st.form__checkbox u:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1275, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input[disabled] {
+  pointer-events: none;
+}
+
+/* line 1278, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input[disabled] + .st.form__checkbox {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* line 1282, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input[disabled] + .st.form__checkbox u {
+  border-color: rgba(87, 100, 114, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1287, src/scss/statusgator-ui.scss */
+.st.form__checkbox-input[disabled] + .st.form__checkbox span {
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1296, src/scss/statusgator-ui.scss */
+.st.form__radio {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 1303, src/scss/statusgator-ui.scss */
+.st.form__radio u {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid rgba(22, 58, 95, 0.5);
+  background-color: transparent;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1316, src/scss/statusgator-ui.scss */
+.st.form__radio u:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #21BF73;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1332, src/scss/statusgator-ui.scss */
+.st.form__radio span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #163A5F;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1339, src/scss/statusgator-ui.scss */
+.st.form__radio-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 1348, src/scss/statusgator-ui.scss */
+.st.form__radio-input:checked + .st.form__radio u {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1352, src/scss/statusgator-ui.scss */
+.st.form__radio-input:checked + .st.form__radio u:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1361, src/scss/statusgator-ui.scss */
+.st.form__radio-input[disabled] {
+  pointer-events: none;
+}
+
+/* line 1364, src/scss/statusgator-ui.scss */
+.st.form__radio-input[disabled] + .st.form__radio {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* line 1368, src/scss/statusgator-ui.scss */
+.st.form__radio-input[disabled] + .st.form__radio u {
+  border-color: rgba(87, 100, 114, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1373, src/scss/statusgator-ui.scss */
+.st.form__radio-input[disabled] + .st.form__radio span {
+  color: #576472;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1382, src/scss/statusgator-ui.scss */
+.st.form__error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #FD5E53;
+}
+
+/* line 1395, src/scss/statusgator-ui.scss */
+.st.form__info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25px;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #576472;
+}
+
+/* line 1409, src/scss/statusgator-ui.scss */
+.st.form__copy {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #21BF73;
+}
+
+/* line 1419, src/scss/statusgator-ui.scss */
+.st.form__load {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 1427, src/scss/statusgator-ui.scss */
+.st.form__load span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #21BF73;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border-color: #21BF73 transparent transparent transparent;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+/* line 1437, src/scss/statusgator-ui.scss */
+.st.form__load span:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+/* line 1438, src/scss/statusgator-ui.scss */
+.st.form__load span:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+/* line 1439, src/scss/statusgator-ui.scss */
+.st.form__load span:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* line 1451, src/scss/statusgator-ui.scss */
+.st.dropdown {
+  position: relative;
+}
+
+/* line 1456, src/scss/statusgator-ui.scss */
+.st.dropdown.is-open .st.dropdown__toggle {
+  border-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1462, src/scss/statusgator-ui.scss */
+.st.dropdown.is-open .st.dropdown__toggle > div i:before, .st.dropdown.is-open .st.dropdown__toggle > div i:after {
+  background-color: #21bf73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1471, src/scss/statusgator-ui.scss */
+.st.dropdown.is-open .st.dropdown__menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 1480, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 48px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: 1px solid #CBDBE3;
+  background-color: #FFFFFF;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 1492, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div:nth-of-type(1) {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* line 1502, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 100%;
+}
+
+/* line 1510, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* line 1516, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div i {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 14px;
+  height: 14px;
+}
+
+/* line 1523, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div i:before, .st.dropdown__toggle > div i:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 65%;
+  height: 2px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #000000;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1535, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div i:before {
+  left: -2px;
+  -webkit-transform: translate(1.2px, -50%) rotate(43deg);
+      -ms-transform: translate(1.2px, -50%) rotate(43deg);
+          transform: translate(1.2px, -50%) rotate(43deg);
+}
+
+/* line 1540, src/scss/statusgator-ui.scss */
+.st.dropdown__toggle > div i:after {
+  right: -2px;
+  -webkit-transform: translate(-1.2px, -50%) rotate(-43deg);
+      -ms-transform: translate(-1.2px, -50%) rotate(-43deg);
+          transform: translate(-1.2px, -50%) rotate(-43deg);
+}
+
+/* line 1548, src/scss/statusgator-ui.scss */
+.st.dropdown__menu {
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+  overflow: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-height: 216px;
+  padding: 8px 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 0 25px 35px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 0 25px 35px rgba(0, 0, 0, 0.03);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #FFFFFF;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 1569, src/scss/statusgator-ui.scss */
+.st.dropdown__item {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 44px 0 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #163A5F;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 1582, src/scss/statusgator-ui.scss */
+.st.dropdown__item:hover {
+  color: #21BF73;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 1587, src/scss/statusgator-ui.scss */
+.st.dropdown__item.is-active {
+  background-color: rgba(33, 191, 115, 0.05);
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 1591, src/scss/statusgator-ui.scss */
+.st.dropdown__item.is-active:before, .st.dropdown__item.is-active:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1599, src/scss/statusgator-ui.scss */
+.st.dropdown__item:before, .st.dropdown__item:after {
+  opacity: 0;
+  visibility: hidden;
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 2px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #21bf73;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1612, src/scss/statusgator-ui.scss */
+.st.dropdown__item:before {
+  right: 22px;
+  width: 6px;
+  -webkit-transform: translate(-0.25px, 1.25px) rotate(45deg);
+      -ms-transform: translate(-0.25px, 1.25px) rotate(45deg);
+          transform: translate(-0.25px, 1.25px) rotate(45deg);
+}
+
+/* line 1618, src/scss/statusgator-ui.scss */
+.st.dropdown__item:after {
+  right: 16px;
+  width: 10px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

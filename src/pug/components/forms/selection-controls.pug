@@ -1,0 +1,102 @@
+// SECTION :: START
+
+p.ui__title Selection controls
+
+.ui__content
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Toggle button
+        .st.form
+          .st.form__field
+            input.st.form__toggle-input(type='checkbox' id='switch-default' name='' placeholder='')
+            label(for='switch-default').st.form__toggle
+
+  .ui__code(style='margin-top: 35px;')
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__toggle-input" id="switch-default" type="checkbox" name="" placeholder="" />
+    <label class="st form__toggle" for="switch-default"></label>
+  </div>
+</div>`)
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Check box
+        .st.form
+          .st.form__field
+            input.st.form__checkbox-input(type='checkbox' id='checkbox-default' name='' placeholder='')
+            label.st.form__checkbox(for='checkbox-default')
+              u
+              span Something here
+    div
+      .ui__form
+        p.ui__form-title Check box :disabled
+        .st.form
+          .st.form__field
+            input.st.form__checkbox-input(type='checkbox' id='checkbox-default-1' name='' placeholder='' disabled)
+            label.st.form__checkbox(for='checkbox-default-1')
+              u
+              span Something here
+
+  .ui__code(style='margin-top: 35px;')
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__checkbox-input" id="checkbox-default" type="checkbox" name="" placeholder="" />
+    <label class="st form__checkbox" for="checkbox-default">
+      <u></u><span>Something here</span>
+    </label>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__checkbox-input" type="checkbox" id="checkbox-default-1" name="" placeholder="" disabled="disabled" />
+    <label class="st form__checkbox" for="checkbox-default-1">
+      <u></u><span>Something here</span>
+    </label>
+  </div>
+</div>`)
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Radio button
+        .st.form
+          .st.form__field
+            input.st.form__radio-input(type='radio' id='radio-default' name='' placeholder='')
+            label.st.form__radio(for='radio-default')
+              u
+              span Something here
+    div
+      .ui__form
+        p.ui__form-title Radio button :disabled
+        .st.form
+          .st.form__field
+            input.st.form__radio-input(type='radio' id='radio-default-1' name='' placeholder='' disabled)
+            label.st.form__radio(for='checkbox-default-1')
+              u
+              span Something here
+
+  .ui__code(style='margin-top: 35px;')
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__radio-input" id="radio-default" type="radio" name="" placeholder="" />
+    <label class="st form__radio" for="radio-default">
+      <u></u><span>Something here</span>
+    </label>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <input class="st form__radio-input" type="radio" id="radio-default-1" name="" placeholder="" disabled="disabled" />
+    <label class="st form__radio" for="radio-default-1">
+      <u></u><span>Something here</span>
+    </label>
+  </div>
+</div>`)
+
+// SECTION :: END

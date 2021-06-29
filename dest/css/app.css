@@ -766,4 +766,37 @@ picture {
   padding-right: 32px;
 }
 
+/* line 306, src/scss/_components/ui.scss */
+.ui__form-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 20px 0;
+  margin-bottom: 15px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid #EFEFEF;
+  background-color: #ffffff;
+}
+
+/* line 315, src/scss/_components/ui.scss */
+.ui__form-wrapper:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+/* line 320, src/scss/_components/ui.scss */
+.ui__form-title {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #163A5F;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

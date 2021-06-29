@@ -1,0 +1,157 @@
+// SECTION :: START
+
+p.ui__title Input Fields
+
+.ui__content
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Default, Hover, Active form input, Form input with data
+        .st.form
+          .st.form__field
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" />
+    </label>
+  </div>
+</div>`)
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Error
+        .st.form
+          .st.form__field.is-error
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder')
+              span.st.form__error Error message
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field is-error">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" />
+      <span class="st form__error">Error message</span>
+    </label>
+  </div>
+</div>`)
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Additional indicator
+        .st.form
+          .st.form__field
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder')
+              span.st.form__info Additional information.
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field is-load">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" />
+      <i class="st form__load">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </i>
+    </label>
+  </div>
+</div>`)
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Input with loading indicator
+        .st.form
+          .st.form__field.is-load
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder')
+              i.st.form__load
+                span
+                span
+                span
+                span
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field is-load">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" />
+      <i class="st form__load">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </i>
+    </label>
+  </div>
+</div>`)
+
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Disabled form input
+        .st.form
+          .st.form__field.is-disabled
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder' disabled)
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field is-disabled">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" disabled="disabled" />
+    </label>
+  </div>
+</div>`)
+
+
+  .ui__form-wrapper
+    div
+      .ui__form
+        p.ui__form-title Copy field
+        .st.form
+          .st.form__field.is-copy
+            label.st.form__label
+              input.st.form__input(type='text' name='' placeholder='Placeholder')
+              a.st.form__copy(href="#") Copy
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st form">
+  <div class="st form__field is-copy">
+    <label class="st form__label">
+      <input class="st form__input" type="text" name="" placeholder="Placeholder" />
+      <a class="st form__copy" href="#">Copy</a>
+    </label>
+  </div>
+</div>`)
+
+  .ui__table(style='margin-top: 35px;')
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.form'], 'Add this class to FORM or DIV elements.')
+        +tableRow(['.st.form__field'], 'Add this class to FORM wrap elements.')
+        +tableRow(['.st.form__label'], 'Add this class to LABEL elements.')
+        +tableRow(['.st.form__input'], 'Add this class to INPUT elements.')
+
+// SECTION :: END

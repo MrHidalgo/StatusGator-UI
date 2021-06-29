@@ -38,7 +38,9 @@
           <li><a href="#" sidebar-btn-js data-id="3">Layout & Grid</a>
             <div><a href="#" sidebar-inner-btn-js data-container="3" data-inner-id="1">Layouts</a><a href="#" sidebar-inner-btn-js data-container="3" data-inner-id="2">Corner radius</a></div>
           </li>
-          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="4">Forms</a></li>
+          <li><a href="#" sidebar-btn-js data-id="4">Forms</a>
+            <div><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="1">Input fields</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="2">Selection controls</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="3">Search forms</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="4">Dropdown</a></div>
+          </li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="5">Buttons</a></li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="6">Placeholders</a></li>
           <li><a class="is-disabled" href="#" sidebar-btn-js data-id="7">Navigation</a></li>
@@ -52,8 +54,8 @@
       <section class="ui" id="ui">
         <div class="c-grid">
           <div class="ui__wrapper">
-            <div class="ui__container" data-id="1">
-              <div class="ui__row" data-inner-id="1">
+            <div class="ui__container is-active" data-id="1">
+              <div class="ui__row is-active" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Primary colours</p>
                 <p class="ui__desc">Customizing the default color palette for your project.</p>
@@ -784,11 +786,261 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container is-active" data-id="3">
+            <div class="ui__container" data-id="3">
               <div class="ui__row" data-inner-id="1">
-                <!--include layout-grid/layouts-->
+                <!-- SECTION :: START-->
+                <p class="ui__title">Layouts</p>
+                <div class="ui__content">
+                  <div class="ui__layouts-wrapper">
+                    <div>
+                      <div class="ui__layouts">
+                        <p class="ui__layouts-title">Responsive</p>
+                        <p class="ui__layouts-desc">Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md & lg viewport widths.</p>
+                        <div class="st container">
+                          <div class="st row">
+                            <div class="st col-xs-12 col-sm-3 col-md-2 col-lg-1"><span></span></div>
+                            <div class="st col-xs-6 col-sm-6 col-md-8 col-lg-10"><span></span></div>
+                            <div class="st col-xs-6 col-sm-3 col-md-2 col-lg-1"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-12 col-sm-3 col-md-2 col-lg-1"><span></span></div>
+                            <div class="st col-xs-12 col-sm-9 col-md-10 col-lg-11"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-10 col-sm-6 col-md-8 col-lg-10"><span></span></div>
+                            <div class="st col-xs-2 col-sm-6 col-md-4 col-lg-2"><span></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__layouts">
+                        <p class="ui__layouts-title">Fluid</p>
+                        <p class="ui__layouts-desc">Percent based widths allow fluid resizing of columns and rows.</p>
+                        <div class="st container">
+                          <div class="st row">
+                            <div class="st col-xs-12"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-1"><span></span></div>
+                            <div class="st col-xs-11"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-2"><span></span></div>
+                            <div class="st col-xs-10"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-3"><span></span></div>
+                            <div class="st col-xs-9"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-4"><span></span></div>
+                            <div class="st col-xs-8"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-5"><span></span></div>
+                            <div class="st col-xs-7"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-6"><span></span></div>
+                            <div class="st col-xs-6"><span></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__layouts">
+                        <p class="ui__layouts-title">Offsets</p>
+                        <p class="ui__layouts-desc">Offset a column</p>
+                        <div class="st container">
+                          <div class="st row">
+                            <div class="st col-xs-offset-11 col-xs-1"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-10 col-xs-2"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-9 col-xs-3"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-8 col-xs-4"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-7 col-xs-5"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-6 col-xs-6"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-5 col-xs-7"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-4 col-xs-8"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-3 col-xs-9"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-2 col-xs-10"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs-offset-1 col-xs-11"><span></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__layouts">
+                        <p class="ui__layouts-title">Auto Width</p>
+                        <p class="ui__layouts-desc">Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+                        <div class="st container">
+                          <div class="st row">
+                            <div class="st col-xs"><span></span></div>
+                            <div class="st col-xs"><span></span></div>
+                          </div>
+                          <div class="st row">
+                            <div class="st col-xs"><span></span></div>
+                            <div class="st col-xs"><span></span></div>
+                            <div class="st col-xs"><span></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__table">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.container</code><code>.st.container-fluid</code>
+                            </div>
+                          </td>
+                          <td>Use .container for a responsive pixel width, .container-fluid for width: 100% across all viewports and devices, or a responsive container for a combination of fluid and pixel widths.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.row</code>
+                            </div>
+                          </td>
+                          <td>Each column has horizontal padding (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-xs</code><code>.st.col-xs-1</code><code>.st.col-xs-2</code><code>.st.col-xs-3</code><code>.st.col-xs-4</code><code>.st.col-xs-5</code><code>.st.col-xs-6</code><code>.st.col-xs-7</code><code>.st.col-xs-8</code><code>.st.col-xs-9</code><code>.st.col-xs-10</code><code>.st.col-xs-11</code><code>.st.col-xs-12</code>
+                            </div>
+                          </td>
+                          <td>There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-xs-offset</code><code>.st.col-xs-offset-1</code><code>.st.col-xs-offset-2</code><code>.st.col-xs-offset-3</code><code>.st.col-xs-offset-4</code><code>.st.col-xs-offset-5</code><code>.st.col-xs-offset-6</code><code>.st.col-xs-offset-7</code><code>.st.col-xs-offset-8</code><code>.st.col-xs-offset-9</code><code>.st.col-xs-offset-10</code><code>.st.col-xs-offset-11</code><code>.st.col-xs-offset-12</code>
+                            </div>
+                          </td>
+                          <td>You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-sm</code><code>.st.col-sm-1</code><code>.st.col-sm-2</code><code>.st.col-sm-3</code><code>.st.col-sm-4</code><code>.st.col-sm-5</code><code>.st.col-sm-6</code><code>.st.col-sm-7</code><code>.st.col-sm-8</code><code>.st.col-sm-9</code><code>.st.col-sm-10</code><code>.st.col-sm-11</code><code>.st.col-sm-12</code>
+                            </div>
+                          </td>
+                          <td>There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-sm-offset</code><code>.st.col-sm-offset-1</code><code>.st.col-sm-offset-2</code><code>.st.col-sm-offset-3</code><code>.st.col-sm-offset-4</code><code>.st.col-sm-offset-5</code><code>.st.col-sm-offset-6</code><code>.st.col-sm-offset-7</code><code>.st.col-sm-offset-8</code><code>.st.col-sm-offset-9</code><code>.st.col-sm-offset-10</code><code>.st.col-sm-offset-11</code><code>.st.col-sm-offset-12</code>
+                            </div>
+                          </td>
+                          <td>You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-md</code><code>.st.col-md-1</code><code>.st.col-md-2</code><code>.st.col-md-3</code><code>.st.col-md-4</code><code>.st.col-md-5</code><code>.st.col-md-6</code><code>.st.col-md-7</code><code>.st.col-md-8</code><code>.st.col-md-9</code><code>.st.col-md-10</code><code>.st.col-md-11</code><code>.st.col-md-12</code>
+                            </div>
+                          </td>
+                          <td>There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-md-offset</code><code>.st.col-md-offset-1</code><code>.st.col-md-offset-2</code><code>.st.col-md-offset-3</code><code>.st.col-md-offset-4</code><code>.st.col-md-offset-5</code><code>.st.col-md-offset-6</code><code>.st.col-md-offset-7</code><code>.st.col-md-offset-8</code><code>.st.col-md-offset-9</code><code>.st.col-md-offset-10</code><code>.st.col-md-offset-11</code><code>.st.col-md-offset-12</code>
+                            </div>
+                          </td>
+                          <td>You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-lg</code><code>.st.col-lg-1</code><code>.st.col-lg-2</code><code>.st.col-lg-3</code><code>.st.col-lg-4</code><code>.st.col-lg-5</code><code>.st.col-lg-6</code><code>.st.col-lg-7</code><code>.st.col-lg-8</code><code>.st.col-lg-9</code><code>.st.col-lg-10</code><code>.st.col-lg-11</code><code>.st.col-lg-12</code>
+                            </div>
+                          </td>
+                          <td>There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span. Widths are set in percentages so you always have the same relative sizing.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.col-lg-offset</code><code>.st.col-lg-offset-1</code><code>.st.col-lg-offset-2</code><code>.st.col-lg-offset-3</code><code>.st.col-lg-offset-4</code><code>.st.col-lg-offset-5</code><code>.st.col-lg-offset-6</code><code>.st.col-lg-offset-7</code><code>.st.col-lg-offset-8</code><code>.st.col-lg-offset-9</code><code>.st.col-lg-offset-10</code><code>.st.col-lg-offset-11</code><code>.st.col-lg-offset-12</code>
+                            </div>
+                          </td>
+                          <td>You can offset grid columns in two ways: our responsive .col-[xs,sm,md,lg]-offset-* grid classes. Grid classes are sized to match columns while margins are more useful for quick layouts where the width of the offset is variable.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st container&quot;&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;st col-xs&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;st col-xs&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;st col-xs&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st container&quot;&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-offset-11 col-xs-1&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-offset-10 col-xs-2&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-offset-9 col-xs-3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-offset-8 col-xs-4&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st container&quot;&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-12&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;st col-xs-11&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;st row&quot;&gt;
+    &lt;div class=&quot;st col-xs-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;st col-xs-10&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
               </div>
-              <div class="ui__row is-active" data-inner-id="2">
+              <div class="ui__row" data-inner-id="2">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Corner radius</p>
                 <div class="ui__content">
@@ -848,7 +1100,472 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container" data-id="4"></div>
+            <div class="ui__container" data-id="4">
+              <div class="ui__row" data-inner-id="1">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Input Fields</p>
+                <div class="ui__content">
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Default, Hover, Active form input, Form input with data</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; /&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Error</p>
+                        <div class="st form">
+                          <div class="st form__field is-error">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder"><span class="st form__error">Error message</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field is-error&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; /&gt;
+      &lt;span class=&quot;st form__error&quot;&gt;Error message&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Additional indicator</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder"><span class="st form__info">Additional information.</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field is-load&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; /&gt;
+      &lt;i class=&quot;st form__load&quot;&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+      &lt;/i&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Input with loading indicator</p>
+                        <div class="st form">
+                          <div class="st form__field is-load">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder"><i class="st form__load"><span></span><span></span><span></span><span></span></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field is-load&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; /&gt;
+      &lt;i class=&quot;st form__load&quot;&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+      &lt;/i&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Disabled form input</p>
+                        <div class="st form">
+                          <div class="st form__field is-disabled">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder" disabled>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field is-disabled&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; disabled=&quot;disabled&quot; /&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Copy field</p>
+                        <div class="st form">
+                          <div class="st form__field is-copy">
+                            <label class="st form__label">
+                              <input class="st form__input" type="text" name="" placeholder="Placeholder"><a class="st form__copy" href="#">Copy</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field is-copy&quot;&gt;
+    &lt;label class=&quot;st form__label&quot;&gt;
+      &lt;input class=&quot;st form__input&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;Placeholder&quot; /&gt;
+      &lt;a class=&quot;st form__copy&quot; href=&quot;#&quot;&gt;Copy&lt;/a&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__table" style="margin-top: 35px;">
+                    <p class="ui__table-title">ClassName</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Class</th>
+                          <th>DESCRIPTION</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.form</code>
+                            </div>
+                          </td>
+                          <td>Add this class to FORM or DIV elements.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.form__field</code>
+                            </div>
+                          </td>
+                          <td>Add this class to FORM wrap elements.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.form__label</code>
+                            </div>
+                          </td>
+                          <td>Add this class to LABEL elements.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="ui__table-code"><code>.st.form__input</code>
+                            </div>
+                          </td>
+                          <td>Add this class to INPUT elements.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="2">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Selection controls</p>
+                <div class="ui__content">
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Toggle button</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__toggle-input" type="checkbox" id="switch-default" name="" placeholder="">
+                            <label class="st form__toggle" for="switch-default"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code" style="margin-top: 35px;">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__toggle-input&quot; id=&quot;switch-default&quot; type=&quot;checkbox&quot; name=&quot;&quot; placeholder=&quot;&quot; /&gt;
+    &lt;label class=&quot;st form__toggle&quot; for=&quot;switch-default&quot;&gt;&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Check box</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__checkbox-input" type="checkbox" id="checkbox-default" name="" placeholder="">
+                            <label class="st form__checkbox" for="checkbox-default">
+                              <u></u><span>Something here</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Check box :disabled</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__checkbox-input" type="checkbox" id="checkbox-default-1" name="" placeholder="" disabled>
+                            <label class="st form__checkbox" for="checkbox-default-1">
+                              <u></u><span>Something here</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code" style="margin-top: 35px;">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__checkbox-input&quot; id=&quot;checkbox-default&quot; type=&quot;checkbox&quot; name=&quot;&quot; placeholder=&quot;&quot; /&gt;
+    &lt;label class=&quot;st form__checkbox&quot; for=&quot;checkbox-default&quot;&gt;
+      &lt;u&gt;&lt;/u&gt;&lt;span&gt;Something here&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__checkbox-input&quot; type=&quot;checkbox&quot; id=&quot;checkbox-default-1&quot; name=&quot;&quot; placeholder=&quot;&quot; disabled=&quot;disabled&quot; /&gt;
+    &lt;label class=&quot;st form__checkbox&quot; for=&quot;checkbox-default-1&quot;&gt;
+      &lt;u&gt;&lt;/u&gt;&lt;span&gt;Something here&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Radio button</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__radio-input" type="radio" id="radio-default" name="" placeholder="">
+                            <label class="st form__radio" for="radio-default">
+                              <u></u><span>Something here</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__form">
+                        <p class="ui__form-title">Radio button :disabled</p>
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__radio-input" type="radio" id="radio-default-1" name="" placeholder="" disabled>
+                            <label class="st form__radio" for="checkbox-default-1">
+                              <u></u><span>Something here</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code" style="margin-top: 35px;">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__radio-input&quot; id=&quot;radio-default&quot; type=&quot;radio&quot; name=&quot;&quot; placeholder=&quot;&quot; /&gt;
+    &lt;label class=&quot;st form__radio&quot; for=&quot;radio-default&quot;&gt;
+      &lt;u&gt;&lt;/u&gt;&lt;span&gt;Something here&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__radio-input&quot; type=&quot;radio&quot; id=&quot;radio-default-1&quot; name=&quot;&quot; placeholder=&quot;&quot; disabled=&quot;disabled&quot; /&gt;
+    &lt;label class=&quot;st form__radio&quot; for=&quot;radio-default-1&quot;&gt;
+      &lt;u&gt;&lt;/u&gt;&lt;span&gt;Something here&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="3">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Search forms</p>
+                <div class="ui__content">
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form">
+                        <div class="st form">
+                          <div class="st form__field">
+                            <input class="st form__search" type="search" name="" placeholder="Search..."><i class="st form__search-icon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st form&quot;&gt;
+  &lt;div class=&quot;st form__field&quot;&gt;
+    &lt;input class=&quot;st form__search&quot; type=&quot;search&quot; name=&quot;&quot; placeholder=&quot;Search...&quot; /&gt;
+    &lt;i class=&quot;st form__search-icon&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="4">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Dropdown</p>
+                <div class="ui__content">
+                  <div class="ui__form-wrapper">
+                    <div>
+                      <div class="ui__form" style="margin-bottom: 20px;">
+                        <div class="st dropdown"><a class="st dropdown__toggle" href="#">
+                            <div>
+                              <p>Choose</p>
+                            </div>
+                            <div><i></i></div></a>
+                          <div class="st dropdown__menu"><a class="st dropdown__item" href="#" data-val="Option 1">Option 1</a><a class="st dropdown__item" href="#" data-val="Option 2">Option 2</a><a class="st dropdown__item" href="#" data-val="Option 3">Option 3</a><a class="st dropdown__item" href="#" data-val="Option 4">Option 4</a><a class="st dropdown__item" href="#" data-val="Option 5">Option 5</a><a class="st dropdown__item" href="#" data-val="Option 6">Option 6</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st dropdown&quot;&gt;
+  &lt;a class=&quot;st dropdown__toggle&quot; href=&quot;#&quot;&gt;
+    &lt;div&gt;
+      &lt;p&gt;Choose&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;i&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;st dropdown__menu&quot;&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 1&quot;&gt;Option 1&lt;/a&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 2&quot;&gt;Option 2&lt;/a&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 3&quot;&gt;Option 3&lt;/a&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 4&quot;&gt;Option 4&lt;/a&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 5&quot;&gt;Option 5&lt;/a&gt;
+    &lt;a class=&quot;st dropdown__item&quot; href=&quot;#&quot; data-val=&quot;Option 6&quot;&gt;Option 6&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-javascript">
+                      <label>JS</label><code>for(let i = 0; i &lt; document.querySelectorAll('.st.dropdown__toggle').length; i++) {
+  const btn =  document.querySelectorAll('.st.dropdown__toggle')[i];
+
+  btn.addEventListener('click', (ev) =&gt; {
+    const el = ev.currentTarget;
+
+    el.parentNode.classList.contains('is-open')
+      ? el.parentNode.classList.remove('is-open')
+      : el.parentNode.classList.add('is-open');
+
+  });
+}</code></pre>
+                    <pre class="code code-javascript">
+                      <label>JS</label><code>for(let i = 0; i &lt; document.querySelectorAll('.st.dropdown__item').length; i++) {
+  const btn =  document.querySelectorAll('.st.dropdown__item')[i];
+
+  btn.addEventListener('click', (ev) =&gt; {
+    const el = ev.currentTarget;
+
+    el.classList.contains('is-active')
+      ? el.classList.remove('is-active')
+      : el.classList.add('is-active');
+
+  });
+}</code></pre>
+                  </div>
+                </div>
+                <script>
+                  for(let i = 0; i < document.querySelectorAll('.st.dropdown__toggle').length; i++) {
+                    const btn =  document.querySelectorAll('.st.dropdown__toggle')[i];
+                  
+                    btn.addEventListener('click', (ev) => {
+                      const el = ev.currentTarget;
+                  
+                      el.parentNode.classList.contains('is-open')
+                        ? el.parentNode.classList.remove('is-open')
+                        : el.parentNode.classList.add('is-open');
+                  
+                    });
+                  }
+                  
+                  for(let i = 0; i < document.querySelectorAll('.st.dropdown__item').length; i++) {
+                    const btn =  document.querySelectorAll('.st.dropdown__item')[i];
+                  
+                    btn.addEventListener('click', (ev) => {
+                      const el = ev.currentTarget;
+                  
+                      el.classList.contains('is-active')
+                        ? el.classList.remove('is-active')
+                        : el.classList.add('is-active');
+                  
+                    });
+                  }
+                  
+                </script>
+                <!-- SECTION :: END-->
+              </div>
+            </div>
             <div class="ui__container" data-id="5"></div>
             <div class="ui__container" data-id="6"></div>
             <div class="ui__container" data-id="7"></div>
