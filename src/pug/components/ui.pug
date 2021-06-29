@@ -4,9 +4,9 @@ section#ui.ui
   .c-grid
     .ui__wrapper
 
-      .ui__container.is-active(data-id='1')
+      .ui__container(data-id='1')
 
-        .ui__row.is-active(data-inner-id='1')
+        .ui__row(data-inner-id='1')
 
           include colours/primary-color
 
@@ -72,11 +72,13 @@ section#ui.ui
 
       .ui__container(data-id='5')
 
+        .ui__row(data-inner-id='1')
 
+      .ui__container.is-active(data-id='6')
 
-      .ui__container(data-id='6')
+        .ui__row.is-active(data-inner-id='1')
 
-
+          include placeholders/avatars
 
       .ui__container(data-id='7')
 

@@ -197,7 +197,7 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* DROPDOWN */
   /* ===== ===== ===== ===== ===== */
-  /*  */
+  /* AVATARS */
   /* ===== ===== ===== ===== ===== */
   /*  */
   /* ===== ===== ===== ===== ===== */
@@ -2231,6 +2231,41 @@ picture {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/* line 1629, src/scss/statusgator-ui.scss */
+.st.avatars {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #21BF73;
+}
+
+/* line 1643, src/scss/statusgator-ui.scss */
+.st.avatars__text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */
