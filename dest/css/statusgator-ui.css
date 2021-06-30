@@ -203,7 +203,7 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* BASE */
   /* ===== ===== ===== ===== ===== */
-  /* MENU */
+  /* INFORMATION */
   /* ===== ===== ===== ===== ===== */
   /* MENU */
   /* ===== ===== ===== ===== ===== */
@@ -2394,6 +2394,128 @@ picture {
   -webkit-box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
           box-shadow: 0 40px 80px 0 rgba(22, 58, 95, 0.05);
   background-color: #FFFFFF;
+}
+
+/* line 1730, src/scss/statusgator-ui.scss */
+.st.info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 45px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+
+/* line 1736, src/scss/statusgator-ui.scss */
+.st.info.info--up {
+  background-color: rgba(33, 191, 115, 0.1);
+}
+
+/* line 1740, src/scss/statusgator-ui.scss */
+.st.info.info--up .info__desc a {
+  color: #21bf73;
+}
+
+/* line 1745, src/scss/statusgator-ui.scss */
+.st.info.info--unknown {
+  background-color: rgba(225, 232, 242, 0.1);
+}
+
+/* line 1749, src/scss/statusgator-ui.scss */
+.st.info.info--unknown .info__desc a {
+  color: #163a5f;
+}
+
+/* line 1754, src/scss/statusgator-ui.scss */
+.st.info.info--warn {
+  background-color: rgba(245, 190, 79, 0.1);
+}
+
+/* line 1758, src/scss/statusgator-ui.scss */
+.st.info.info--warn .info__desc a {
+  color: #f5be4f;
+}
+
+/* line 1763, src/scss/statusgator-ui.scss */
+.st.info.info--maintaince {
+  background-color: rgba(21, 151, 168, 0.1);
+}
+
+/* line 1767, src/scss/statusgator-ui.scss */
+.st.info.info--maintaince .info__desc a {
+  color: #1597a8;
+}
+
+/* line 1772, src/scss/statusgator-ui.scss */
+.st.info.info--down {
+  background-color: rgba(253, 94, 83, 0.1);
+}
+
+/* line 1776, src/scss/statusgator-ui.scss */
+.st.info.info--down .info__desc a {
+  color: #fd5e53;
+}
+
+/* line 1783, src/scss/statusgator-ui.scss */
+.st.info .info__left {
+  width: 100%;
+  max-width: 50px;
+}
+
+/* line 1788, src/scss/statusgator-ui.scss */
+.st.info .info__right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 35px;
+}
+
+/* line 1795, src/scss/statusgator-ui.scss */
+.st.info .info__icon {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background-color: #ffffff;
+}
+
+/* line 1806, src/scss/statusgator-ui.scss */
+.st.info .info__title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #163A5F;
+}
+
+/* line 1812, src/scss/statusgator-ui.scss */
+.st.info .info__desc {
+  font-size: 14px;
+}
+
+/* line 1815, src/scss/statusgator-ui.scss */
+.st.info .info__desc a {
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

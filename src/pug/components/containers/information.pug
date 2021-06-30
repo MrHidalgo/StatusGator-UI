@@ -1,0 +1,145 @@
+// SECTION :: START
+
+p.ui__title Information
+
+.ui__content
+
+  .ui__base-wrapper
+    div
+      .ui__base
+        .st.info.info--up
+          .info__left
+            .info__icon
+              svg(width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(fill-rule='evenodd' clip-rule='evenodd' d='M14.1752 0H35.8502C44.3252 0 50.0002 5.95 50.0002 14.8V35.2276C50.0002 44.0501 44.3252 50.0001 35.8502 50.0001H14.1752C5.70024 50.0001 0.000244141 44.0501 0.000244141 35.2276V14.8C0.000244141 5.95 5.70024 0 14.1752 0ZM23.5752 32.4751L35.4502 20.6001C36.3002 19.75 36.3002 18.375 35.4502 17.5C34.6002 16.65 33.2002 16.65 32.3502 17.5L22.0252 27.8251L17.6502 23.4501C16.8002 22.6001 15.4002 22.6001 14.5502 23.4501C13.7002 24.3001 13.7002 25.6751 14.5502 26.5501L20.5002 32.4751C20.9252 32.9001 21.4752 33.1001 22.0252 33.1001C22.6002 33.1001 23.1502 32.9001 23.5752 32.4751Z' fill='#21BF73')
+          .info__right
+            p.info__title Current G Suite status is up
+            p.info__desc!= "We checked the official G Suite status page 3 min 45 sec ago. <a href='#'>Learn more</a>"
+    div
+      .ui__base
+        .st.info.info--unknown
+          .info__left
+            .info__icon
+              svg(width='50' height='51' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M35.85 0.998047H14.175C5.7 0.998047 0 6.94805 0 15.798V36.2255C0 45.0505 5.7 50.998 14.175 50.998H35.85C44.325 50.998 50 45.0505 50 36.2255V15.798C50 6.94805 44.325 0.998047 35.85 0.998047Z' fill='#B0B6BF')
+                path(d='M18 20.1736C18.5845 19.1983 19.4707 18.4298 20.6586 17.8678C21.8653 17.2893 23.2983 17 24.9576 17C27.0316 17 28.7192 17.4545 30.0202 18.3636C31.3401 19.2562 32 20.438 32 21.9091C32 22.6198 31.8114 23.2645 31.4343 23.843C31.0761 24.4215 30.633 24.8926 30.1051 25.2562C29.596 25.6198 29.0774 25.9669 28.5495 26.2975C28.0215 26.6116 27.569 26.9669 27.1919 27.3636C26.8337 27.7603 26.6545 28.1901 26.6545 28.6529V29.6446H22.6667V28.4545C22.6667 27.7769 22.8364 27.1653 23.1758 26.6198C23.534 26.0744 23.9582 25.6364 24.4485 25.3058C24.9576 24.9587 25.4572 24.6364 25.9475 24.3388C26.4566 24.0248 26.8808 23.686 27.2202 23.3223C27.5785 22.9587 27.7576 22.562 27.7576 22.1322C27.7576 21.5207 27.4653 21.0248 26.8808 20.6446C26.2963 20.2479 25.5704 20.0496 24.703 20.0496C23.1569 20.0496 21.9785 20.6612 21.1677 21.8843L18 20.1736ZM23.0626 31.5785C23.4963 31.1983 24.0431 31.0083 24.703 31.0083C25.3441 31.0083 25.8815 31.1983 26.3152 31.5785C26.7488 31.9587 26.9657 32.4298 26.9657 32.9917C26.9657 33.5537 26.7488 34.0331 26.3152 34.4298C25.8815 34.8099 25.3441 35 24.703 35C24.0431 35 23.4869 34.8099 23.0343 34.4298C22.6007 34.0331 22.3838 33.5537 22.3838 32.9917C22.3838 32.4298 22.6101 31.9587 23.0626 31.5785Z' fill='white')
+          .info__right
+            p.info__title Current G Suite status is unknown
+            p.info__desc!= "We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a>"
+    div
+      .ui__base
+        .st.info.info--warn
+          .info__left
+            .info__icon
+              svg(width='50' height='51' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(fill-rule='evenodd' clip-rule='evenodd' d='M14.175 0.998047H35.85C44.325 0.998047 50 6.94805 50 15.798V36.2255C50 45.0505 44.325 50.998 35.85 50.998H14.175C5.7 50.998 0 45.0505 0 36.2255V15.798C0 6.94805 5.7 0.998047 14.175 0.998047ZM24.9748 18.6506C23.7998 18.6506 22.8248 17.6731 22.8248 16.4756C22.8248 15.2506 23.7998 14.2756 25.0248 14.2756C26.2248 14.2756 27.1998 15.2506 27.1998 16.4756C27.1998 17.6731 26.2248 18.6506 24.9748 18.6506ZM27.1752 35.4505C27.1752 36.6505 26.2002 37.6255 24.9752 37.6255C23.7752 37.6255 22.8002 36.6505 22.8002 35.4505V24.4005C22.8002 23.198 23.7752 22.2005 24.9752 22.2005C26.2002 22.2005 27.1752 23.198 27.1752 24.4005V35.4505Z' fill='#F5BE4F')
+          .info__right
+            p.info__title Current G Suite status is  warn
+            p.info__desc!= "We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a>"
+    div
+      .ui__base
+        .st.info.info--maintaince
+          .info__left
+            .info__icon
+              svg(width='50' height='51' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M35.85 0.998047H14.175C5.7 0.998047 0 6.94805 0 15.798V36.2255C0 45.0505 5.7 50.998 14.175 50.998H35.85C44.325 50.998 50 45.0505 50 36.2255V15.798C50 6.94805 44.325 0.998047 35.85 0.998047Z' fill='#1597A8')
+                path(fill-rule='evenodd' clip-rule='evenodd' d='M25 18C27.3936 18 29.4465 19.0787 30.8069 21H27V23H34V16H32V19.2703C30.2749 17.1825 27.8042 16 25 16C19.4772 16 15 20.4772 15 26H17C17 21.5817 20.5817 18 25 18ZM25 34C22.6064 34 20.5535 32.9213 19.1931 31H23V29H16V36H18V32.7297C19.7251 34.8175 22.1958 36 25 36C30.5228 36 35 31.5228 35 26H33C33 30.4183 29.4183 34 25 34Z' fill='white')
+          .info__right
+            p.info__title Current G Suite status is maintaince
+            p.info__desc!= "We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a>"
+    div
+      .ui__base
+        .st.info.info--down
+          .info__left
+            .info__icon
+              svg(width='50' height='51' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(fill-rule='evenodd' clip-rule='evenodd' d='M14.1745 0.998047H35.8495C44.3245 0.998047 49.9995 6.94805 49.9995 15.798V36.2255C49.9995 45.0505 44.3245 50.998 35.8495 50.998H14.1745C5.69951 50.998 -0.000488281 45.0505 -0.000488281 36.2255V15.798C-0.000488281 6.94805 5.69951 0.998047 14.1745 0.998047ZM32.5247 33.4982C33.3747 32.6507 33.3747 31.2757 32.5247 30.4257L28.0747 25.9757L32.5247 21.5232C33.3747 20.6757 33.3747 19.2757 32.5247 18.4257C31.6747 17.5732 30.2997 17.5732 29.4247 18.4257L24.9997 22.8732L20.5497 18.4257C19.6747 17.5732 18.2997 17.5732 17.4497 18.4257C16.5997 19.2757 16.5997 20.6757 17.4497 21.5232L21.8997 25.9757L17.4497 30.4007C16.5997 31.2757 16.5997 32.6507 17.4497 33.4982C17.8747 33.9232 18.4497 34.1507 18.9997 34.1507C19.5747 34.1507 20.1247 33.9232 20.5497 33.4982L24.9997 29.0757L29.4497 33.4982C29.8747 33.9507 30.4247 34.1507 30.9747 34.1507C31.5497 34.1507 32.0997 33.9232 32.5247 33.4982Z' fill='#FD5E53')
+          .info__right
+            p.info__title Current G Suite status is down
+            p.info__desc!= "We checked the official G Suite status page 3 min 45 sec ago. <a href='#'>Learn more</a>"
+
+  .ui__table
+    p.ui__table-title ClassName
+    table
+      thead
+        tr
+          th Class
+          th DESCRIPTION
+      tbody
+        +tableRow(['.st.info.info--up'], 'Add this class to apply a style for info badge.')
+        +tableRow(['.st.info.info--unknown'], 'Add this class to apply a style for info badge.')
+        +tableRow(['.st.info.info--warn'], 'Add this class to apply a style for info badge.')
+        +tableRow(['.st.info.info--maintaince'], 'Add this class to apply a style for info badge.')
+        +tableRow(['.st.info.info--down'], 'Add this class to apply a style for info badge.')
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<div class="st info info--up">
+  <div class="info__left">
+    <div class="info__icon">
+      <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1752 0H35.8502C44.3252 0 50.0002 5.95 50.0002 14.8V35.2276C50.0002 44.0501 44.3252 50.0001 35.8502 50.0001H14.1752C5.70024 50.0001 0.000244141 44.0501 0.000244141 35.2276V14.8C0.000244141 5.95 5.70024 0 14.1752 0ZM23.5752 32.4751L35.4502 20.6001C36.3002 19.75 36.3002 18.375 35.4502 17.5C34.6002 16.65 33.2002 16.65 32.3502 17.5L22.0252 27.8251L17.6502 23.4501C16.8002 22.6001 15.4002 22.6001 14.5502 23.4501C13.7002 24.3001 13.7002 25.6751 14.5502 26.5501L20.5002 32.4751C20.9252 32.9001 21.4752 33.1001 22.0252 33.1001C22.6002 33.1001 23.1502 32.9001 23.5752 32.4751Z" fill="#21BF73"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="info__right">
+    <p class="info__title">Current G Suite status is up</p>
+    <p class="info__desc">We checked the official G Suite status page 3 min 45 sec ago. <a href='#'>Learn more</a></p>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st info info--unknown">
+  <div class="info__left">
+    <div class="info__icon">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35.85 0.998047H14.175C5.7 0.998047 0 6.94805 0 15.798V36.2255C0 45.0505 5.7 50.998 14.175 50.998H35.85C44.325 50.998 50 45.0505 50 36.2255V15.798C50 6.94805 44.325 0.998047 35.85 0.998047Z" fill="#B0B6BF"></path>
+        <path d="M18 20.1736C18.5845 19.1983 19.4707 18.4298 20.6586 17.8678C21.8653 17.2893 23.2983 17 24.9576 17C27.0316 17 28.7192 17.4545 30.0202 18.3636C31.3401 19.2562 32 20.438 32 21.9091C32 22.6198 31.8114 23.2645 31.4343 23.843C31.0761 24.4215 30.633 24.8926 30.1051 25.2562C29.596 25.6198 29.0774 25.9669 28.5495 26.2975C28.0215 26.6116 27.569 26.9669 27.1919 27.3636C26.8337 27.7603 26.6545 28.1901 26.6545 28.6529V29.6446H22.6667V28.4545C22.6667 27.7769 22.8364 27.1653 23.1758 26.6198C23.534 26.0744 23.9582 25.6364 24.4485 25.3058C24.9576 24.9587 25.4572 24.6364 25.9475 24.3388C26.4566 24.0248 26.8808 23.686 27.2202 23.3223C27.5785 22.9587 27.7576 22.562 27.7576 22.1322C27.7576 21.5207 27.4653 21.0248 26.8808 20.6446C26.2963 20.2479 25.5704 20.0496 24.703 20.0496C23.1569 20.0496 21.9785 20.6612 21.1677 21.8843L18 20.1736ZM23.0626 31.5785C23.4963 31.1983 24.0431 31.0083 24.703 31.0083C25.3441 31.0083 25.8815 31.1983 26.3152 31.5785C26.7488 31.9587 26.9657 32.4298 26.9657 32.9917C26.9657 33.5537 26.7488 34.0331 26.3152 34.4298C25.8815 34.8099 25.3441 35 24.703 35C24.0431 35 23.4869 34.8099 23.0343 34.4298C22.6007 34.0331 22.3838 33.5537 22.3838 32.9917C22.3838 32.4298 22.6101 31.9587 23.0626 31.5785Z" fill="white"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="info__right">
+    <p class="info__title">Current G Suite status is unknown</p>
+    <p class="info__desc">We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a></p>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st info info--warn">
+  <div class="info__left">
+    <div class="info__icon">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.175 0.998047H35.85C44.325 0.998047 50 6.94805 50 15.798V36.2255C50 45.0505 44.325 50.998 35.85 50.998H14.175C5.7 50.998 0 45.0505 0 36.2255V15.798C0 6.94805 5.7 0.998047 14.175 0.998047ZM24.9748 18.6506C23.7998 18.6506 22.8248 17.6731 22.8248 16.4756C22.8248 15.2506 23.7998 14.2756 25.0248 14.2756C26.2248 14.2756 27.1998 15.2506 27.1998 16.4756C27.1998 17.6731 26.2248 18.6506 24.9748 18.6506ZM27.1752 35.4505C27.1752 36.6505 26.2002 37.6255 24.9752 37.6255C23.7752 37.6255 22.8002 36.6505 22.8002 35.4505V24.4005C22.8002 23.198 23.7752 22.2005 24.9752 22.2005C26.2002 22.2005 27.1752 23.198 27.1752 24.4005V35.4505Z" fill="#F5BE4F"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="info__right">
+    <p class="info__title">Current G Suite status is warn</p>
+    <p class="info__desc">We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a></p>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st info info--maintaince">
+  <div class="info__left">
+    <div class="info__icon">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M35.85 0.998047H14.175C5.7 0.998047 0 6.94805 0 15.798V36.2255C0 45.0505 5.7 50.998 14.175 50.998H35.85C44.325 50.998 50 45.0505 50 36.2255V15.798C50 6.94805 44.325 0.998047 35.85 0.998047Z" fill="#1597A8"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25 18C27.3936 18 29.4465 19.0787 30.8069 21H27V23H34V16H32V19.2703C30.2749 17.1825 27.8042 16 25 16C19.4772 16 15 20.4772 15 26H17C17 21.5817 20.5817 18 25 18ZM25 34C22.6064 34 20.5535 32.9213 19.1931 31H23V29H16V36H18V32.7297C19.7251 34.8175 22.1958 36 25 36C30.5228 36 35 31.5228 35 26H33C33 30.4183 29.4183 34 25 34Z" fill="white"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="info__right">
+    <p class="info__title">Current G Suite status is maintaince</p>
+    <p class="info__desc">We checked the official G Suite status page 3 min 45 sec ago. <a href=#'>Learn more</a></p>
+  </div>
+</div>`)
+    +codePreview('code-html', 'HTML', `<div class="st info info--down">
+  <div class="info__left">
+    <div class="info__icon">
+      <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1745 0.998047H35.8495C44.3245 0.998047 49.9995 6.94805 49.9995 15.798V36.2255C49.9995 45.0505 44.3245 50.998 35.8495 50.998H14.1745C5.69951 50.998 -0.000488281 45.0505 -0.000488281 36.2255V15.798C-0.000488281 6.94805 5.69951 0.998047 14.1745 0.998047ZM32.5247 33.4982C33.3747 32.6507 33.3747 31.2757 32.5247 30.4257L28.0747 25.9757L32.5247 21.5232C33.3747 20.6757 33.3747 19.2757 32.5247 18.4257C31.6747 17.5732 30.2997 17.5732 29.4247 18.4257L24.9997 22.8732L20.5497 18.4257C19.6747 17.5732 18.2997 17.5732 17.4497 18.4257C16.5997 19.2757 16.5997 20.6757 17.4497 21.5232L21.8997 25.9757L17.4497 30.4007C16.5997 31.2757 16.5997 32.6507 17.4497 33.4982C17.8747 33.9232 18.4497 34.1507 18.9997 34.1507C19.5747 34.1507 20.1247 33.9232 20.5497 33.4982L24.9997 29.0757L29.4497 33.4982C29.8747 33.9507 30.4247 34.1507 30.9747 34.1507C31.5497 34.1507 32.0997 33.9232 32.5247 33.4982Z" fill="#FD5E53"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="info__right">
+    <p class="info__title">Current G Suite status is down</p>
+    <p class="info__desc">We checked the official G Suite status page 3 min 45 sec ago. <a href='#'>Learn more</a></p>
+  </div>
+</div>`)
+
+// SECTION :: END

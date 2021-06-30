@@ -2,20 +2,23 @@
 
 .sidebar {
 	z-index: 1000;
+	overflow: hidden;
+	overflow-y: auto;
 	position: fixed;
 	top: 0;
 	left: 0;
 	display: flex;
-	align-items: center;
 	width: 200px;
 	height: 100%;
-	padding: 30px 0;
 	box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.1);
 	background-color: #163A5F;
 
 	&__wrapper {
 		display: flex;
 		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		padding: 30px 0;
 
 		ol {
 			display: flex;

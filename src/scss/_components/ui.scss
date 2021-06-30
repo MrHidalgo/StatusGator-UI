@@ -336,6 +336,14 @@
 			&:not(:first-of-type) {
 				margin-top: 30px;
 			}
+
+			> div {
+				&:not(:last-of-type) {
+					.st.info {
+						margin-bottom: 20px;
+					}
+				}
+			}
 		}
 
 		&-title {

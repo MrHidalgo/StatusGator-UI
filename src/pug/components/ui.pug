@@ -88,10 +88,12 @@ section#ui.ui
 
       .ui__container.is-active(data-id='8')
 
-        .ui__row.is-active(data-inner-id='1')
+        .ui__row(data-inner-id='1')
 
-            include containers/base
+          include containers/base
 
         .ui__row.is-active(data-inner-id='2')
+
+          include containers/information
 
 // SECTION :: END

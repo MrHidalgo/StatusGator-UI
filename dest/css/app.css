@@ -225,6 +225,8 @@ picture {
 /* line 3, src/scss/_components/sidebar.scss */
 .sidebar {
   z-index: 1000;
+  overflow: hidden;
+  overflow-y: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -232,13 +234,8 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 200px;
   height: 100%;
-  padding: 30px 0;
   -webkit-box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 4px 0 15px 0 rgba(0, 0, 0, 0.1);
   background-color: #163A5F;
@@ -251,9 +248,12 @@ picture {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 30px 0;
 }
 
-/* line 20, src/scss/_components/sidebar.scss */
+/* line 23, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol {
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,7 +267,7 @@ picture {
   width: 100%;
 }
 
-/* line 25, src/scss/_components/sidebar.scss */
+/* line 28, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -281,7 +281,7 @@ picture {
   width: 100%;
 }
 
-/* line 30, src/scss/_components/sidebar.scss */
+/* line 33, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > a {
   position: relative;
   display: -webkit-box;
@@ -301,13 +301,13 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 43, src/scss/_components/sidebar.scss */
+/* line 46, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > a.is-disabled {
   pointer-events: none;
   opacity: 0.55;
 }
 
-/* line 48, src/scss/_components/sidebar.scss */
+/* line 51, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > a:hover, .sidebar__wrapper ol li > a.is-active {
   background-color: #ffffff;
   color: #163A5F;
@@ -316,7 +316,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 56, src/scss/_components/sidebar.scss */
+/* line 59, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -330,7 +330,7 @@ picture {
   padding-left: 20px;
 }
 
-/* line 61, src/scss/_components/sidebar.scss */
+/* line 64, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > div a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -343,12 +343,12 @@ picture {
   color: #fff;
 }
 
-/* line 69, src/scss/_components/sidebar.scss */
+/* line 72, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > div a:hover {
   text-decoration: underline;
 }
 
-/* line 73, src/scss/_components/sidebar.scss */
+/* line 76, src/scss/_components/sidebar.scss */
 .sidebar__wrapper ol li > div a.is-active {
   text-decoration: underline;
 }
@@ -823,7 +823,12 @@ picture {
   margin-top: 30px;
 }
 
-/* line 341, src/scss/_components/ui.scss */
+/* line 342, src/scss/_components/ui.scss */
+.ui__base-wrapper > div:not(:last-of-type) .st.info {
+  margin-bottom: 20px;
+}
+
+/* line 349, src/scss/_components/ui.scss */
 .ui__base-title {
   padding-bottom: 5px;
   font-weight: 500;
@@ -832,7 +837,7 @@ picture {
   color: #163A5F;
 }
 
-/* line 349, src/scss/_components/ui.scss */
+/* line 357, src/scss/_components/ui.scss */
 .ui__base .st.base {
   width: 100%;
   max-width: 300px;
