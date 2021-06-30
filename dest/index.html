@@ -41,7 +41,9 @@
           <li><a href="#" sidebar-btn-js data-id="4">Forms</a>
             <div><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="1">Input fields</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="2">Selection controls</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="3">Search forms</a><a href="#" sidebar-inner-btn-js data-container="4" data-inner-id="4">Dropdown</a></div>
           </li>
-          <li><a class="is-disabled" href="#" sidebar-btn-js data-id="5">Buttons</a></li>
+          <li><a href="#" sidebar-btn-js data-id="5">Buttons</a>
+            <div><a href="#" sidebar-inner-btn-js data-container="5" data-inner-id="1">Action buttons</a><a href="#" sidebar-inner-btn-js data-container="5" data-inner-id="2">Small action button</a><a href="#" sidebar-inner-btn-js data-container="5" data-inner-id="3">Stroke button</a><a href="#" sidebar-inner-btn-js data-container="5" data-inner-id="4">Labels</a><a href="#" sidebar-inner-btn-js data-container="5" data-inner-id="5">Arrow button</a></div>
+          </li>
           <li><a href="#" sidebar-btn-js data-id="6">Placeholders</a>
             <div><a href="#" sidebar-inner-btn-js data-container="6" data-inner-id="1">Avatars</a></div>
           </li>
@@ -60,8 +62,8 @@
       <section class="ui" id="ui">
         <div class="c-grid">
           <div class="ui__wrapper">
-            <div class="ui__container" data-id="1">
-              <div class="ui__row" data-inner-id="1">
+            <div class="ui__container is-active" data-id="1">
+              <div class="ui__row is-active" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Primary colours</p>
                 <p class="ui__desc">Customizing the default color palette for your project.</p>
@@ -1573,7 +1575,250 @@
               </div>
             </div>
             <div class="ui__container" data-id="5">
-              <div class="ui__row" data-inner-id="1"></div>
+              <div class="ui__row" data-inner-id="1">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Buttons</p>
+                <div class="ui__content">
+                  <div class="ui__btn-wrapper">
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Big button</p><a class="st btn btn--big" href="#"><span>Start with Free Trial</span></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Default button</p><a class="st btn" href="#"><span>Free Trial</span></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Saving</p><a class="st btn btn--saving" href="#">
+                          <div class="st btn__load">
+                            <u></u>
+                          </div><span>Free Trial</span></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Disabled</p><a class="st btn btn--disabled" href="#" disabled><span>Free Trial</span></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Saved</p><a class="st btn btn--saved" href="#">
+                          <div class="st btn__check"></div><span>Free Trial</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--big&quot; href=&quot;#&quot;&gt;
+  &lt;span&gt;Start with Free Trial&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn&quot; href=&quot;#&quot;&gt;
+  &lt;span&gt;Free Trial&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--saving&quot; href=&quot;#&quot;&gt;
+  &lt;div class=&quot;st btn__load&quot;&gt;
+    &lt;u&gt;&lt;/u&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Free Trial&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--disabled&quot; href=&quot;#&quot; disabled=&quot;disabled&quot;&gt;
+  &lt;span&gt;Free Trial&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--saved&quot; href=&quot;#&quot;&gt;
+  &lt;div class=&quot;st btn__check&quot;&gt;&lt;/div&gt;
+  &lt;span&gt;Free Trial&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="2">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Small action button</p>
+                <div class="ui__content">
+                  <div class="ui__btn-wrapper">
+                    <div>
+                      <div class="ui__btn"><a class="st btn btn--badge" href="#">
+                          <div class="st btn__logo">
+                            <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+                              <g>
+                                <path d="M185.255,512c-76.201-0.439-139.233-155.991-139.233-235.21c0-129.404,97.075-157.734,134.487-157.734   c16.86,0,34.863,6.621,50.742,12.48c11.104,4.087,22.588,8.306,28.975,8.306c3.823,0,12.832-3.589,20.786-6.738   c16.963-6.753,38.071-15.146,62.651-15.146c0.044,0,0.103,0,0.146,0c18.354,0,74.004,4.028,107.461,54.272l7.837,11.777   l-11.279,8.511c-16.113,12.158-45.513,34.336-45.513,78.267c0,52.031,33.296,72.041,49.292,81.665   c7.061,4.248,14.37,8.628,14.37,18.208c0,6.255-49.922,140.566-122.417,140.566c-17.739,0-30.278-5.332-41.338-10.034   c-11.191-4.761-20.845-8.862-36.797-8.862c-8.086,0-18.311,3.823-29.136,7.881C221.496,505.73,204.752,512,185.753,512H185.255z"></path>
+                                <path d="M351.343,0c1.888,68.076-46.797,115.304-95.425,112.342C247.905,58.015,304.54,0,351.343,0z"></path>
+                              </g>
+                            </svg>
+                          </div><span>Apple</span></a></div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--badge&quot; href=&quot;#&quot;&gt;
+  &lt;div class=&quot;st btn__logo&quot;&gt;
+    &lt;svg id=&quot;Capa_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; version=&quot;1.1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 512 512&quot; style=&quot;enable-background:new 0 0 512 512;&quot; xml:space=&quot;preserve&quot; width=&quot;512&quot; height=&quot;512&quot;&gt;
+      &lt;g&gt;
+        &lt;path d=&quot;M185.255,512c-76.201-0.439-139.233-155.991-139.233-235.21c0-129.404,97.075-157.734,134.487-157.734   c16.86,0,34.863,6.621,50.742,12.48c11.104,4.087,22.588,8.306,28.975,8.306c3.823,0,12.832-3.589,20.786-6.738   c16.963-6.753,38.071-15.146,62.651-15.146c0.044,0,0.103,0,0.146,0c18.354,0,74.004,4.028,107.461,54.272l7.837,11.777   l-11.279,8.511c-16.113,12.158-45.513,34.336-45.513,78.267c0,52.031,33.296,72.041,49.292,81.665   c7.061,4.248,14.37,8.628,14.37,18.208c0,6.255-49.922,140.566-122.417,140.566c-17.739,0-30.278-5.332-41.338-10.034   c-11.191-4.761-20.845-8.862-36.797-8.862c-8.086,0-18.311,3.823-29.136,7.881C221.496,505.73,204.752,512,185.753,512H185.255z&quot;&gt;&lt;/path&gt;
+        &lt;path d=&quot;M351.343,0c1.888,68.076-46.797,115.304-95.425,112.342C247.905,58.015,304.54,0,351.343,0z&quot;&gt;&lt;/path&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Apple&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="3">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Stroke button</p>
+                <div class="ui__content">
+                  <div class="ui__btn-wrapper">
+                    <div>
+                      <div class="ui__btn"><a class="st btn btn--stroke" href="#"><span>Previous</span></a></div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st btn btn--stroke&quot; href=&quot;#&quot;&gt;
+  &lt;span&gt;Previous&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="4">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Labels</p>
+                <div class="ui__content">
+                  <div class="ui__btn-wrapper">
+                    <div>
+                      <div class="ui__btn">
+                        <div class="st labels labels--up"><span>UP</span></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <div class="st labels labels--warn"><span>WARN</span></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <div class="st labels labels--down"><span>DOWN</span></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <div class="st labels labels--maint"><span>MAINT</span></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <div class="st labels labels--unknown"><span>UNKNOWN</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st labels labels--up&quot;&gt;
+  &lt;span&gt;UP&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st labels labels--warn&quot;&gt;
+  &lt;span&gt;UP&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st labels labels--down&quot;&gt;
+  &lt;span&gt;UP&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st labels labels--maint&quot;&gt;
+  &lt;span&gt;UP&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;div class=&quot;st labels labels--unknown&quot;&gt;
+  &lt;span&gt;UP&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
+              <div class="ui__row" data-inner-id="5">
+                <!-- SECTION :: START-->
+                <p class="ui__title">Arrow button</p>
+                <div class="ui__content">
+                  <div class="ui__btn-wrapper">
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Arrow button - green</p><a class="st navigation" href="#">
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z"></path>
+                          </svg></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Arrow button - green reverse</p><a class="st navigation navigation--reverse" href="#">
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z"></path>
+                          </svg></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Arrow button - grey</p><a class="st navigation navigation--grey" href="#">
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z"></path>
+                          </svg></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="ui__btn">
+                        <p class="ui__btn-title">Arrow button - grey reverse</p><a class="st navigation navigation--reverse navigation--grey" href="#">
+                          <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z"></path>
+                          </svg></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui__code">
+                    <p class="ui__code-title">Code</p>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st navigation&quot; href=&quot;#&quot;&gt;
+  &lt;svg width=&quot;13&quot; height=&quot;14&quot; viewBox=&quot;0 0 13 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st navigation navigation--reverse&quot; href=&quot;#&quot;&gt;
+  &lt;svg width=&quot;13&quot; height=&quot;14&quot; viewBox=&quot;0 0 13 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st navigation navigation--grey&quot; href=&quot;#&quot;&gt;
+  &lt;svg width=&quot;13&quot; height=&quot;14&quot; viewBox=&quot;0 0 13 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;</code></pre>
+                    <pre class="code code-html">
+                      <label>HTML</label><code>&lt;a class=&quot;st navigation navigation--reverse navigation--grey&quot; href=&quot;#&quot;&gt;
+  &lt;svg width=&quot;13&quot; height=&quot;14&quot; viewBox=&quot;0 0 13 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+    &lt;path d=&quot;M0 5.66627V8.33287C0 11.3101 1.78814e-07 12.7986 0.97101 13.3813C1.94202 13.9639 3.2555 13.2634 5.8824 11.8623L8.3824 10.529C11.2941 8.97607 12.75 8.19957 12.75 6.99957C12.75 5.79957 11.2941 5.02307 8.3824 3.47016L5.8824 2.13682C3.2555 0.73582 1.94202 0.0353098 0.97101 0.61792C1.78814e-07 1.20052 0 2.68909 0 5.66627Z&quot;&gt;&lt;/path&gt;
+  &lt;/svg&gt;
+&lt;/a&gt;</code></pre>
+                  </div>
+                </div>
+                <!-- SECTION :: END-->
+              </div>
             </div>
             <div class="ui__container" data-id="6">
               <div class="ui__row" data-inner-id="1">
@@ -1636,7 +1881,7 @@
                 <!-- SECTION :: END-->
               </div>
             </div>
-            <div class="ui__container is-active" data-id="8">
+            <div class="ui__container" data-id="8">
               <div class="ui__row" data-inner-id="1">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Base</p>
@@ -1761,7 +2006,7 @@
                 </div>
                 <!-- SECTION :: END-->
               </div>
-              <div class="ui__row is-active" data-inner-id="2">
+              <div class="ui__row" data-inner-id="2">
                 <!-- SECTION :: START-->
                 <p class="ui__title">Information</p>
                 <div class="ui__content">

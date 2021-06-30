@@ -4,96 +4,66 @@ section#ui.ui
   .c-grid
     .ui__wrapper
 
-      .ui__container(data-id='1')
-
-        .ui__row(data-inner-id='1')
-
+      .ui__container.is-active(data-id='1')
+        .ui__row.is-active(data-inner-id='1')
           include colours/primary-color
-
         .ui__row(data-inner-id='2')
-
           include colours/shade-of-greys
-
         .ui__row(data-inner-id='3')
-
           include colours/tone-colours
-
         .ui__row(data-inner-id='4')
-
           include colours/shadow
 
-
       .ui__container(data-id='2')
-
         .ui__row(data-inner-id='1')
-
           include typography/headings
-
         .ui__row(data-inner-id='2')
-
           include typography/paragraphs
-
         .ui__row(data-inner-id='3')
-
           include typography/labels
-
         .ui__row(data-inner-id='4')
-
           include typography/text-selection
 
-
       .ui__container(data-id='3')
-
         .ui__row(data-inner-id='1')
-
           include layout-grid/layouts
-
         .ui__row(data-inner-id='2')
-
           include layout-grid/corner-radius
 
       .ui__container(data-id='4')
-
         .ui__row(data-inner-id='1')
-
           include forms/input-fields
-
         .ui__row(data-inner-id='2')
-
           include forms/selection-controls
-
         .ui__row(data-inner-id='3')
-
           include forms/search-forms
-
         .ui__row(data-inner-id='4')
-
           include forms/dropdown
 
       .ui__container(data-id='5')
-
         .ui__row(data-inner-id='1')
+          include buttons/buttons
+        .ui__row(data-inner-id='2')
+          include buttons/buttons-badge
+        .ui__row(data-inner-id='3')
+          include buttons/buttons-stroke
+        .ui__row(data-inner-id='4')
+          include buttons/labels
+        .ui__row(data-inner-id='5')
+          include buttons/buttons-arrow
 
       .ui__container(data-id='6')
-
         .ui__row(data-inner-id='1')
-
           include placeholders/avatars
 
       .ui__container(data-id='7')
-
         .ui__row(data-inner-id='1')
-
           include navigation/menu
 
-      .ui__container.is-active(data-id='8')
-
+      .ui__container(data-id='8')
         .ui__row(data-inner-id='1')
-
           include containers/base
-
-        .ui__row.is-active(data-inner-id='2')
-
+        .ui__row(data-inner-id='2')
           include containers/information
 
 // SECTION :: END

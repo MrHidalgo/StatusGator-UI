@@ -205,7 +205,11 @@ picture {
   /* ===== ===== ===== ===== ===== */
   /* INFORMATION */
   /* ===== ===== ===== ===== ===== */
-  /* MENU */
+  /* BTN */
+  /* ===== ===== ===== ===== ===== */
+  /* LABELS */
+  /* ===== ===== ===== ===== ===== */
+  /* NAVIGATION */
   /* ===== ===== ===== ===== ===== */
 }
 
@@ -2516,6 +2520,454 @@ picture {
 .st.info .info__desc a {
   font-weight: 500;
   text-decoration: underline;
+}
+
+/* line 1826, src/scss/statusgator-ui.scss */
+.st.btn {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  height: 57px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #21BF73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1843, src/scss/statusgator-ui.scss */
+.st.btn:hover {
+  background-color: #21dd83;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1848, src/scss/statusgator-ui.scss */
+.st.btn:active {
+  background-color: #1ba060;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 1853, src/scss/statusgator-ui.scss */
+.st.btn.btn--big {
+  height: 70px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+/* line 1859, src/scss/statusgator-ui.scss */
+.st.btn.btn--badge {
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid #CBDBE3;
+  background-color: #FFFFFF;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1868, src/scss/statusgator-ui.scss */
+.st.btn.btn--badge:hover {
+  border-color: #CBDBE3;
+  background-color: rgba(87, 100, 114, 0.1);
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1874, src/scss/statusgator-ui.scss */
+.st.btn.btn--badge:active {
+  border-color: #21BF73;
+  background-color: #21BF73;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1879, src/scss/statusgator-ui.scss */
+.st.btn.btn--badge:active span {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1885, src/scss/statusgator-ui.scss */
+.st.btn.btn--badge span {
+  font-weight: 600;
+  font-size: 16px;
+  color: #163A5F;
+}
+
+/* line 1892, src/scss/statusgator-ui.scss */
+.st.btn.btn--stroke {
+  min-width: 200px;
+  height: 70px;
+  padding-left: 12px;
+  padding-right: 12px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: 1px solid #576472;
+  background-color: #FFFFFF;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1902, src/scss/statusgator-ui.scss */
+.st.btn.btn--stroke:hover {
+  border-color: #576472;
+  background-color: rgba(87, 100, 114, 0.1);
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1908, src/scss/statusgator-ui.scss */
+.st.btn.btn--stroke:active {
+  border-color: #576472;
+  background-color: #576472;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 1913, src/scss/statusgator-ui.scss */
+.st.btn.btn--stroke:active span {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 1919, src/scss/statusgator-ui.scss */
+.st.btn.btn--stroke span {
+  color: #576472;
+}
+
+/* line 1924, src/scss/statusgator-ui.scss */
+.st.btn.btn--disabled, .st.btn[disabled] {
+  pointer-events: none;
+  background-color: rgba(87, 100, 114, 0.5);
+}
+
+/* line 1930, src/scss/statusgator-ui.scss */
+.st.btn__load {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* line 1938, src/scss/statusgator-ui.scss */
+.st.btn__load u {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border-color: #fff transparent transparent transparent;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+/* line 1948, src/scss/statusgator-ui.scss */
+.st.btn__load u:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+/* line 1949, src/scss/statusgator-ui.scss */
+.st.btn__load u:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+/* line 1950, src/scss/statusgator-ui.scss */
+.st.btn__load u:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+/* line 1954, src/scss/statusgator-ui.scss */
+.st.btn__check {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* line 1963, src/scss/statusgator-ui.scss */
+.st.btn__check:before, .st.btn__check:after {
+  content: '';
+  display: block;
+  height: 2px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* line 1973, src/scss/statusgator-ui.scss */
+.st.btn__check:before {
+  width: 8px;
+  -webkit-transform: translate(3px, 1.4px) rotate(45deg);
+      -ms-transform: translate(3px, 1.4px) rotate(45deg);
+          transform: translate(3px, 1.4px) rotate(45deg);
+}
+
+/* line 1978, src/scss/statusgator-ui.scss */
+.st.btn__check:after {
+  width: 13px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* line 1984, src/scss/statusgator-ui.scss */
+.st.btn__logo {
+  overflow: hidden;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* line 1991, src/scss/statusgator-ui.scss */
+.st.btn__logo img,
+.st.btn__logo svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2001, src/scss/statusgator-ui.scss */
+.st.btn span {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 2013, src/scss/statusgator-ui.scss */
+.st.labels {
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 50px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 2025, src/scss/statusgator-ui.scss */
+.st.labels.labels--up {
+  background-color: #21bf73;
+}
+
+/* line 2028, src/scss/statusgator-ui.scss */
+.st.labels.labels--warn {
+  background-color: #f5be4f;
+}
+
+/* line 2031, src/scss/statusgator-ui.scss */
+.st.labels.labels--down {
+  background-color: #fd5e53;
+}
+
+/* line 2034, src/scss/statusgator-ui.scss */
+.st.labels.labels--maint {
+  background-color: #1597a8;
+}
+
+/* line 2037, src/scss/statusgator-ui.scss */
+.st.labels.labels--unknown {
+  background-color: #b0b6bf;
+}
+
+/* line 2041, src/scss/statusgator-ui.scss */
+.st.labels span {
+  font-weight: bold;
+  font-size: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* line 2052, src/scss/statusgator-ui.scss */
+.st.navigation {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(176, 234, 205, 0.3);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 2067, src/scss/statusgator-ui.scss */
+.st.navigation:hover {
+  background-color: #b0eacd;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 2072, src/scss/statusgator-ui.scss */
+.st.navigation:active {
+  background-color: #21bf73;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 2076, src/scss/statusgator-ui.scss */
+.st.navigation:active svg {
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* line 2083, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--reverse svg {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* line 2088, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--grey {
+  background-color: rgba(87, 100, 114, 0.1);
+}
+
+/* line 2091, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--grey:hover {
+  background-color: rgba(87, 100, 114, 0.5);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 2096, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--grey:active {
+  background-color: #576472;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 2100, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--grey:active svg {
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* line 2106, src/scss/statusgator-ui.scss */
+.st.navigation.navigation--grey svg {
+  fill: #576472;
+}
+
+/* line 2111, src/scss/statusgator-ui.scss */
+.st.navigation svg {
+  -webkit-transform: translateX(1px);
+      -ms-transform: translateX(1px);
+          transform: translateX(1px);
+  fill: #21BF73;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/statusgator-ui.css.map */

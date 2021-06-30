@@ -1,0 +1,60 @@
+// SECTION :: START
+
+p.ui__title Buttons
+
+.ui__content
+
+  .ui__btn-wrapper
+    div
+      .ui__btn
+        p.ui__btn-title Big button
+        a.st.btn.btn--big(href='#')
+          span Start with Free Trial
+    div
+      .ui__btn
+        p.ui__btn-title Default button
+        a.st.btn(href='#')
+          span Free Trial
+    div
+      .ui__btn
+        p.ui__btn-title Saving
+        a.st.btn.btn--saving(href='#')
+          .st.btn__load
+            u
+          span Free Trial
+
+    div
+      .ui__btn
+        p.ui__btn-title Disabled
+        a.st.btn.btn--disabled(href='#' disabled)
+          span Free Trial
+    div
+      .ui__btn
+        p.ui__btn-title Saved
+        a.st.btn.btn--saved(href='#')
+          .st.btn__check
+          span Free Trial
+
+  .ui__code
+    p.ui__code-title Code
+    +codePreview('code-html', 'HTML', `<a class="st btn btn--big" href="#">
+  <span>Start with Free Trial</span>
+</a>`)
+    +codePreview('code-html', 'HTML', `<a class="st btn" href="#">
+  <span>Free Trial</span>
+</a>`)
+    +codePreview('code-html', 'HTML', `<a class="st btn btn--saving" href="#">
+  <div class="st btn__load">
+    <u></u>
+  </div>
+  <span>Free Trial</span>
+</a>`)
+    +codePreview('code-html', 'HTML', `<a class="st btn btn--disabled" href="#" disabled="disabled">
+  <span>Free Trial</span>
+</a>`)
+    +codePreview('code-html', 'HTML', `<a class="st btn btn--saved" href="#">
+  <div class="st btn__check"></div>
+  <span>Free Trial</span>
+</a>`)
+
+// SECTION :: END

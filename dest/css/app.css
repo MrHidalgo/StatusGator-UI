@@ -846,4 +846,40 @@ picture {
   margin-right: auto;
 }
 
+/* line 367, src/scss/_components/ui.scss */
+.ui__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+}
+
+/* line 372, src/scss/_components/ui.scss */
+.ui__btn-wrapper > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 375, src/scss/_components/ui.scss */
+.ui__btn-wrapper > div:not(:last-of-type) {
+  padding-bottom: 25px;
+}
+
+/* line 381, src/scss/_components/ui.scss */
+.ui__btn-title {
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #163A5F;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
