@@ -1652,7 +1652,7 @@ $rounded-sm: 6px;
 
 
 	/* MENU */
-	&.navigation {
+	&.links {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -1679,7 +1679,7 @@ $rounded-sm: 6px;
 			align-items: center;
 			justify-content: center;
 
-			&.navigation__wrapper--column {
+			&.links__wrapper--column {
 				flex-direction: column;
 			}
 		}

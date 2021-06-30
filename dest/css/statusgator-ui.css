@@ -2279,7 +2279,7 @@ picture {
 }
 
 /* line 1655, src/scss/statusgator-ui.scss */
-.st.navigation {
+.st.links {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2304,7 +2304,7 @@ picture {
 }
 
 /* line 1667, src/scss/statusgator-ui.scss */
-.st.navigation:hover {
+.st.links:hover {
   color: #99F3BD;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -2312,7 +2312,7 @@ picture {
 }
 
 /* line 1672, src/scss/statusgator-ui.scss */
-.st.navigation:active {
+.st.links:active {
   color: #21BF73;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -2320,7 +2320,7 @@ picture {
 }
 
 /* line 1677, src/scss/statusgator-ui.scss */
-.st.navigation__wrapper {
+.st.links__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2336,7 +2336,7 @@ picture {
 }
 
 /* line 1682, src/scss/statusgator-ui.scss */
-.st.navigation__wrapper.navigation__wrapper--column {
+.st.links__wrapper.links__wrapper--column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
